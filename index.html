@@ -284,54 +284,87 @@
       <div class="relative max-w-screen-xl mx-auto px-6 py-3 flex items-center justify-between">
     
         <!-- ── LOGO (code của bạn) ────────────── -->
+        <!-- LOGO -->
         <a href="#" class="group flex items-center gap-3.5 hover:gap-4 transition-all duration-300 no-underline">
-    
+
           <!-- Icon wrapper -->
           <div class="relative">
-    
-            <!-- Glow effect -->
+
+            <!-- Glow -->
             <div class="absolute -inset-2 bg-gradient-to-r from-secondary/30 via-primary/20 to-secondary/30
                         rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-    
-            <!-- Logo icon -->
+
+            <!-- Icon -->
             <div class="relative w-11 h-11 bg-white/90 backdrop-blur-md rounded-2xl
                         shadow-sm border border-stone-100 flex items-center justify-center
                         group-hover:rotate-[-4deg] group-hover:scale-105 transition-all duration-500 ease-out">
+
               <span class="material-symbols-outlined text-primary text-2xl
                           group-hover:text-secondary transition-all"
                     style="font-variation-settings:'FILL' 1;">
                 local_drink
               </span>
-              <!-- Tick badge -->
+
+              <!-- Tick -->
               <div class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-secondary rounded-full
                           flex items-center justify-center shadow-sm border border-white">
                 <span class="material-symbols-outlined text-white text-[9px]"
                       style="font-variation-settings:'wght' 700;">check</span>
               </div>
+
             </div>
           </div>
-    
+
           <!-- Text -->
           <div class="flex flex-col">
+
+            <!-- Tagline -->
             <span class="text-[9px] font-black uppercase tracking-[0.5em] text-secondary/80 leading-none mb-0.5">
               Fresh & Organic
             </span>
+
+            <!-- Brand -->
             <div class="text-2xl md:text-3xl font-headline italic font-black tracking-tighter flex items-center">
-              <span class="text-primary group-hover:text-red-500 transition-colors">Sinh Tố</span>
-              <span class="ml-1.5 bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent
-                          font-extrabold tracking-tight relative inline-block">
-                Bin
-                <svg class="absolute -bottom-1 left-0 w-full h-1.5 text-secondary/40
-                            group-hover:text-secondary/70 group-hover:translate-y-[1px]
-                            transition-all duration-300"
-                    viewBox="0 0 100 10" preserveAspectRatio="none">
-                  <path d="M0 5 Q 25 0 50 5 T 100 5"
-                        fill="none" stroke="currentColor"
-                        stroke-width="3" stroke-linecap="round"/>
-                </svg>
+
+              <!-- Sinh Tố -->
+              <span class="text-primary group-hover:text-red-500 transition-colors">
+                Sinh Tố
               </span>
+
+              <!-- Mr. Bin -->
+              <span class="ml-1.5 flex items-end">
+
+                <!-- Mr. -->
+                <span class="text-sm md:text-base font-bold text-secondary mr-1">
+                  Mr.
+                </span>
+
+                <!-- Bin -->
+                <span class="bg-gradient-to-r from-secondary to-primary 
+                            bg-clip-text text-transparent
+                            font-extrabold tracking-tight relative inline-block">
+
+                  Bin
+
+                  <!-- underline -->
+                  <svg class="absolute -bottom-1 left-0 w-full h-1.5 text-secondary/40
+                              group-hover:text-secondary/70 group-hover:translate-y-[1px]
+                              transition-all duration-300"
+                      viewBox="0 0 100 10" preserveAspectRatio="none">
+                    <path d="M0 5 Q 25 0 50 5 T 100 5"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          stroke-linecap="round"/>
+                  </svg>
+
+                </span>
+
+              </span>
+
             </div>
           </div>
+
         </a>
     
         <!-- ── DESKTOP LINKS ──────────────────── -->
@@ -342,7 +375,7 @@
           <div class="nav-sep"></div>
           <a href="#tacos" class="nav-link">Bánh Tacos</a>
           <div class="nav-sep"></div>
-          <a href="#story" class="nav-link">Câu Chuyện</a>
+          <a href="#story" class="nav-link">WellNext Health</a>
         </div>
     
         <!-- ── ACTIONS ────────────────────────── -->
@@ -402,8 +435,7 @@
           </div>
 
           <h1 class="font-headline text-6xl md:text-8xl text-on-surface leading-[1.1] tracking-tight italic">
-            Sinh Tố <span class="text-secondary">Tươi Ngon</span> &amp; Nước Ép
-            Làm Mới <span class="text-primary">Mỗi Ngày</span>
+            Sinh Tố <span class="text-secondary">Tươi</span> &amp; Nước Ép <span class="text-primary">Mỗi Ngày</span>
           </h1>
 
           <p class="text-xl text-on-surface-variant max-w-lg font-light leading-relaxed">
@@ -519,8 +551,8 @@
         <!-- Hàng tiêu đề -->
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div class="max-w-xl">
-            <span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">Trải Nghiệm Hương Vị</span>
-            <h2 class="font-headline text-5xl italic leading-tight">Thực Đơn Thảo Mộc Tinh Tuyển</h2>
+            <span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">Sinh Tố Trái Cây Tươi</span>
+            <h2 class="font-headline text-5xl italic leading-tight">Menu Sinh Tố & Nước Ép</h2>
           </div>
           <div class="flex bg-surface-container-high p-1.5 rounded-full w-full md:w-auto">
             <button id="tab-smoothies" onclick="switchTab('smoothies')"
@@ -1000,10 +1032,10 @@
         <div class="mb-16 flex items-end justify-between">
           <div>
             <span class="text-white/60 font-bold uppercase tracking-[0.3em] text-sm mb-4 block">
-              Hương Vị Đường Phố
+              Món Ăn Nhanh
             </span>
             <h2 class="font-headline text-7xl italic text-white leading-none">
-              Bánh <span class="text-tertiary-fixed">Tacos</span> Đường Phố
+              Bánh <span class="text-tertiary-fixed">Tacos</span>
             </h2>
           </div>
           <!-- Nút Trước / Tiếp -->
@@ -1239,7 +1271,7 @@
           <div class="col-span-2 row-span-2 relative rounded-3xl overflow-hidden group">
             <img
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPqzfwXdIcAbgFTFHRzTmx_G3mFIhOVvR64d9LwJwHfZPN5sceyC-5YIglExCFMIRnyedxLUB2HaFcOi4SkmVh42y_cENZQbltaZ4rde9TDAcv47Hh5SxvQKze-YBTLxlCamqjo1co3DNEN3I27wwlueQg0kyjhsq21mk6-1I4Bi5thjaMgj6rSPpDKt_GV86aeTcc3L_KU9sj35JR3sV8lVzH2IT2LpAw-YwxjbGQ3XfkrFS7AZvWFqqFWU9rb4kOhxlJ37ypT4Y"
+              src="https://i.pinimg.com/1200x/16/4c/3d/164c3d3574c84193efd2ddf1960ba34b.jpg"
               alt="Góc nhìn từ trên xuống của tô sinh tố nhiều màu với granola và trái cây thái lát"
             />
           </div>
@@ -1248,7 +1280,7 @@
           <div class="col-span-1 row-span-1 relative rounded-3xl overflow-hidden group">
             <img
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjHEnPu_4ODb0r9mqDE5nl3Yg9HcXMGYTfnyK7Q8bMdNEE0NfHtHqcQeFpBCX_oNIDpfDtzNDc9HlQktPZVsU0ilbH4xPuO2xrqGJlu7ImaC2ZrLegnkVDeXapJc0-3wW6jdQd2UEJ1a_Jv3hu2CVjYzi-yJ9OUx9ukKJPxUHUDCjl-C7is2OKzpWYjlUgTPgUrNnBxflEEnfjPoaMCSEPNm5zfwDggw7lwvqjCMqHor-t1rnNzebZDLCJzGzOe-d9t8C3ht5NJf0"
+              src="https://i.pinimg.com/736x/0b/76/81/0b7681713c7936f9f36d0fecaa21844b.jpg"
               alt="Salad tươi với gà nướng và lát bơ"
             />
           </div>
@@ -1257,7 +1289,7 @@
           <div class="col-span-1 row-span-2 relative rounded-3xl overflow-hidden group">
             <img
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzrx_C2WvMWBmSowFwApxYdHPg7IjWXM9gYA0xuEpQRBS8h58DMgQesmpcuO3ugDLPhG_BlnvNgoGejugCJy46bav3ZCQ1JbZWlchzeg0iygG4y_wgsg7VIc34xIpnaClO_GJ2HZzsmM9u4U42u7hLhhmBemxIaXjekHmr6rZNmsMn-BgTb4HkKNTsmCkM3mnhid5W__Ej_cFUjujFc-gegHaIIXBsKp9WcvFNfmjQ3hLVomTfLAAbH_WmO4DNnqEyxdMz1Hx8Xx8"
+              src="https://i.pinimg.com/736x/cd/5a/f7/cd5af70f6ba76c03d4f1a6806b3e981e.jpg"
               alt="Tô rau củ nhiều màu sắc với nguyên liệu tự nhiên"
             />
           </div>
@@ -1294,27 +1326,15 @@
         <!-- Nội dung -->
         <div class="order-1 md:order-2 space-y-8">
           <h2 class="font-headline text-6xl italic leading-tight">
-            Sống Cùng
+              Thói Quen
             <span class="text-on-secondary-container underline underline-offset-8 decoration-secondary">
-              Thói Quen Tươi Xanh
+              Tươi Xanh
             </span>
           </h2>
 
           <p class="text-xl text-on-secondary-container/80 leading-relaxed font-light">
             Tại Sinh Tố Bin, chúng tôi tin rằng sức khỏe không phải là gánh nặng — đó là hương vị. Những hỗn hợp thảo mộc của chúng tôi được pha chế để tiếp thêm năng lượng cho bạn trong khi thỏa mãn tâm hồn. Dù là sinh tố buổi sáng hay bánh taco đêm khuya, chúng tôi mang đến sự cân bằng mà bạn cần.
           </p>
-
-          <div class="flex items-center gap-6">
-            <div class="text-center">
-              <span class="block text-4xl font-headline italic">10k+</span>
-              <span class="text-sm uppercase tracking-widest opacity-60">Khách Hàng Hài Lòng</span>
-            </div>
-            <div class="w-px h-12 bg-on-secondary-container/20"></div>
-            <div class="text-center">
-              <span class="block text-4xl font-headline italic">Quận Tân Bình</span>
-              <span class="text-sm uppercase tracking-widest opacity-60">Niềm Tự Hào Địa Phương</span>
-            </div>
-          </div>
         </div>
 
       </div>
@@ -1360,7 +1380,7 @@
                   <div class="w-9 h-9 rounded-full bg-white/40 flex items-center justify-center shrink-0">
                     <span class="material-symbols-outlined text-base text-on-surface">schedule</span>
                   </div>
-                  <p class="text-sm md:text-base font-medium text-on-surface/85">Hours: <strong>8:00 AM - 10:00 PM</strong></p>
+                  <p class="text-sm md:text-base font-medium text-on-surface/85">Hours: <strong>6:00 - 23:00</strong></p>
                 </div>
                 <div class="flex items-center gap-3">
                   <div class="w-9 h-9 rounded-full bg-white/40 flex items-center justify-center shrink-0">
@@ -1421,21 +1441,23 @@
             <!-- Brand -->
             <div class="flex flex-col items-center md:items-start gap-4 text-center md:text-left">
               <!-- FOOTER BRAND -->
-              <div class="flex items-start gap-3 group">
 
-                <!-- Icon nhỏ -->
+              <div class="flex items-start gap-3 group">
+                <!-- ICON -->
                 <div class="relative shrink-0">
-                  
+
                   <!-- Glow nhẹ -->
                   <div class="absolute -inset-1.5 bg-gradient-to-r from-secondary/20 to-primary/20
-                              rounded-full blur-lg opacity-60"></div>
+                              rounded-full blur-lg opacity-70 group-hover:opacity-100 transition"></div>
 
                   <!-- Icon -->
                   <div class="relative w-9 h-9 bg-white/80 backdrop-blur-md rounded-xl
                               flex items-center justify-center
-                              border border-white/40 shadow-sm">
+                              border border-white/40 shadow-sm
+                              group-hover:scale-105 transition">
 
-                    <span class="material-symbols-outlined text-primary text-lg"
+                    <span class="material-symbols-outlined text-primary text-lg
+                                group-hover:text-secondary transition"
                           style="font-variation-settings:'FILL' 1;">
                       local_drink
                     </span>
@@ -1443,15 +1465,15 @@
                   </div>
                 </div>
 
-                <!-- Text -->
+                <!-- TEXT -->
                 <div class="flex flex-col">
 
-                  <!-- Tagline -->
+                  <!-- TAGLINE -->
                   <span class="text-[9px] font-bold uppercase tracking-[0.4em] text-secondary/70 mb-1">
                     Fresh & Organic
                   </span>
 
-                  <!-- Brand name -->
+                  <!-- BRAND -->
                   <div class="flex items-center text-xl font-headline italic font-black tracking-tight">
 
                     <!-- Sinh Tố -->
@@ -1459,27 +1481,38 @@
                       Sinh Tố
                     </span>
 
-                    <!-- Bin -->
-                    <span class="ml-1.5 bg-gradient-to-r from-secondary to-primary 
-                                bg-clip-text text-transparent font-extrabold relative inline-block">
+                    <!-- Mr. Bin -->
+                    <span class="ml-1.5 flex items-end">
 
-                      Bin
+                      <!-- Mr -->
+                      <span class="text-[11px] font-bold text-secondary mr-1 mb-[2px]">
+                        Mr.
+                      </span>
 
-                      <!-- underline nhẹ -->
-                      <svg class="absolute -bottom-1 left-0 w-full h-1 text-secondary/30"
-                          viewBox="0 0 100 10" preserveAspectRatio="none">
-                        <path d="M0 5 Q 25 0 50 5 T 100 5"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"/>
-                      </svg>
+                      <!-- Bin -->
+                      <span class="bg-gradient-to-r from-secondary to-primary 
+                                  bg-clip-text text-transparent
+                                  font-extrabold relative inline-block">
+
+                        Bin
+
+                        <!-- underline -->
+                        <svg class="absolute -bottom-1 left-0 w-full h-1 text-secondary/30"
+                            viewBox="0 0 100 10" preserveAspectRatio="none">
+                          <path d="M0 5 Q 25 0 50 5 T 100 5"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"/>
+                        </svg>
+
+                      </span>
 
                     </span>
 
                   </div>
 
-                  <!-- Description -->
+                  <!-- DESCRIPTION -->
                   <p class="text-sm text-on-surface-variant leading-relaxed max-w-sm mt-2">
                     Ẩm thực đường phố thảo mộc hiện đại — tươi, nhanh và đầy năng lượng cho mỗi ngày.
                   </p>
@@ -1487,6 +1520,7 @@
                 </div>
 
               </div>
+
               <div class="flex items-center gap-3">
                 <a href="#" aria-label="Instagram"
                   class="w-10 h-10 rounded-full border border-stone-300 text-stone-500 flex items-center justify-center hover:text-primary hover:border-primary hover:scale-105 transition-all">
@@ -1695,46 +1729,39 @@
     </script>
 
 
-        <!-- ==================== LOGO BBO TEAM CỐ ĐỊNH GÓC PHẢI DƯỚI (BACKGROUND TRONG SUỐT) ==================== -->
-  <!-- LOGO FLOAT (TRANSPARENT STYLE) -->
-    <!-- FLOATING BRAND -->
-      <div class="fixed bottom-5 right-5 z-[9999] group">
+    <div class="fixed bottom-6 right-6 z-[9999] flex flex-col items-end gap-3 pointer-events-none">
 
-        <a href="#"
-          class="relative block w-14 h-14 sm:w-16 sm:h-16
-                  transition-all duration-300
-                  hover:scale-110 active:scale-95">
-
-          <!-- Glow nhẹ -->
-          <div class="absolute inset-0 rounded-full 
-                      bg-gradient-to-tr from-secondary/30 to-primary/20 
-                      blur-lg opacity-0 group-hover:opacity-100 transition"></div>
-
-          <!-- Logo -->
-          <img 
-            src="img/logo_bbo_team_white.jpg" 
-            alt="BBO Team"
-            class="relative w-full h-full object-contain
-                  rounded-full
-                  drop-shadow-[0_6px_16px_rgba(0,0,0,0.15)]">
+      <div class="group pointer-events-auto">
+        <a href="https://bbotech.vn/services/" target="_blank"
+           class="flex items-center bg-white/80 backdrop-blur-xl p-2 rounded-full
+                  border border-stone-200 shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white active:scale-95">
+                  
+          <div class="relative w-10 h-10 sm:w-12 sm:h-12 shrink-0">
+            <div class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full animate-pulse opacity-20"></div>
+            <img src="img/logo_bbo_team_white.jpg" alt="BBO Team"
+                 class="relative w-full h-full object-cover rounded-full border-2 border-white shadow-sm">
+            <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></div>
+          </div>
+    
+          <div class="flex flex-col whitespace-nowrap overflow-hidden transition-all duration-500 ease-in-out
+                      max-w-0 opacity-0 group-hover:max-w-[250px] group-hover:opacity-100 group-hover:ml-3 group-hover:pr-4
+                      sm:max-w-[250px] sm:opacity-100 sm:ml-3 sm:pr-4">
+            <span class="text-[10px] font-bold text-stone-500 uppercase tracking-tighter leading-none mb-1">Đối tác công nghệ</span>
+            <div class="flex items-center gap-1.5">
+              <span class="text-sm sm:text-base font-black text-on-surface">Thiết kế <span class="text-primary">Website</span></span>
+              <span class="material-symbols-outlined text-primary text-sm animate-bounce">arrow_right_alt</span>
+            </div>
+          </div>
         </a>
-
-        <!-- Modern label -->
-        <div class="absolute bottom-1/2 right-full mr-3 translate-y-1/2
-                    px-3 py-1.5 rounded-full
-                    bg-white/70 backdrop-blur-md
-                    text-xs font-semibold text-on-surface
-                    shadow-md border border-white/40
-                    opacity-0 translate-x-2
-                    group-hover:opacity-100 group-hover:translate-x-0
-                    transition-all duration-300 whitespace-nowrap">
-
-          <span class="text-secondary">BBO</span>
-          <span class="text-primary">Team</span>
-        </div>
-
       </div>
-
+    
+      <div class="hidden sm:flex items-center gap-2 pointer-events-auto">
+        <div class="bg-glass px-3 py-1.5 rounded-2xl border border-white/50 shadow-sm text-[11px] font-medium text-on-surface-variant">
+          Nâng tầm thương hiệu của bạn ngay 🚀
+        </div>
+      </div>
+    
     </div>
+
   </body>
 </html>
