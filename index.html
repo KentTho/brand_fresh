@@ -397,7 +397,7 @@
         <a href="#home"  class="mobile-link" onclick="toggleMobileMenu()">Trang Chủ <span class="material-symbols-outlined">arrow_forward</span></a>
         <a href="#menu"  class="mobile-link" onclick="toggleMobileMenu()">Thực Đơn  <span class="material-symbols-outlined">arrow_forward</span></a>
         <a href="#tacos" class="mobile-link" onclick="toggleMobileMenu()">Bánh Taco <span class="material-symbols-outlined">arrow_forward</span></a>
-        <a href="#story" class="mobile-link" onclick="toggleMobileMenu()">Câu Chuyện <span class="material-symbols-outlined">arrow_forward</span></a>
+        <a href="#story" class="mobile-link" onclick="toggleMobileMenu()">WellNext Health <span class="material-symbols-outlined">arrow_forward</span></a>
         <a href="tel:0933611538" class="nav-cta mt-5 justify-center">
           <span class="material-symbols-outlined">phone_in_talk</span>
           Gọi Đặt Ngay
@@ -1579,6 +1579,8 @@
           </div>
         </div>
       </div>
+
+
     </footer>
 
 
@@ -1627,34 +1629,6 @@
         }, 220);
       }
 
-      /* ══════════════════════════════════════════════════════════════
-        🍹 CẤU HÌNH ẢNH SINH TỐ — CHỈ CẦN SỬA TẠI ĐÂY!
-        Thay URL bên phải dấu : bằng link ảnh mới của bạn.
-        Ảnh nên có tỉ lệ dọc (4:5) để hiển thị đẹp nhất.
-      ══════════════════════════════════════════════════════════════ */
-      const SMOOTHIE_IMAGES = {
-        'CHUOI':     'https://i.pinimg.com/736x/e0/ad/ee/e0adeeddf0de470986d71925ad24e571.jpg',
-        'DU_DU':     'https://i.pinimg.com/736x/64/2e/65/642e65e63927a9fd4dec5bbd79894d9e.jpg',
-        'MIT':       'https://i.pinimg.com/736x/27/ed/99/27ed99e6e2249560fefe0483c3a6d321.jpg',
-        'XOAI':      'https://i.pinimg.com/736x/a9/f4/ce/a9f4cec6e92fa1c23ec63554c1df3cda.jpg',
-        'MANG_CAU':  'https://i.pinimg.com/1200x/9c/c3/d7/9cc3d780016a2132e969613a724dfc4d.jpg',
-        'DAU':       'https://i.pinimg.com/1200x/4a/50/88/4a5088c4b31bb5795b84797cd97fb5f2.jpg',
-        'SAU_RIENG': 'https://i.pinimg.com/1200x/7e/89/ee/7e89ee4fab7e3c3330eafcc0d5fd3c6c.jpg',
-        'DUA_LUOI':  'https://i.pinimg.com/736x/88/da/14/88da14c11483427bdb01b99d232adc75.jpg',
-        'DAU_XANH':  'https://i.pinimg.com/736x/c6/e4/15/c6e415075335a6eaeb0c9c5c98e2eb40.jpg',
-        'DUA_GANG':  'https://i.pinimg.com/1200x/51/d6/d3/51d6d3693201e915c89f55023c29854f.jpg',
-        'DUA':       'https://i.pinimg.com/736x/98/17/4b/98174b9bb5b6dce2593d4e14f631e4a5.jpg',
-        'SAPOCHE':   'https://cdn.tgdd.vn/Files/2019/04/01/1158144/lam-sinh-to-sa-po-che-don-gian-tai-nha-202109291205020460.jpg',
-        'BO':        'https://i.pinimg.com/736x/18/dd/9b/18dd9ba775636c93e7c36bf678da0646.jpg',
-        'HAT_SEN':   'https://cdn.tgdd.vn/Files/2018/12/20/1139342/5-cach-nau-sua-sen-ngon-me-ly-don-gian-tai-nha-4.jpg',
-      };
-      /* ══════════════════════════════════════════════════════════════ */
-  
-      /* ── Hàm chọn món Sinh Tố (dùng ảnh từ config bên trên) ──── */
-      function selectSmoothie(el, name, desc, price, key) {
-        const img = SMOOTHIE_IMAGES[key] || '';
-        selectItem(el, name, desc, price, img);
-      }
 
       // Chọn món đầu tiên khi tải trang
       document.addEventListener('DOMContentLoaded', () => {
@@ -1726,26 +1700,59 @@
         document.getElementById('mobile-menu').classList.toggle('open');
         document.getElementById('hamburger-btn').classList.toggle('open');
       }
+
+      /* --- Hiệu ứng cuộn cho nút BBO Team --------- */
+      (function() {
+        let bboTimer;
+        const bboText = document.getElementById('bbo-text-container');
+        const bboRobot = document.getElementById('bbo-robot-container');
+        
+        const textExpandClasses = ['max-w-[250px]', 'opacity-100', 'ml-3', 'pr-4'];
+        const robotExpandClasses = ['opacity-100', 'translate-y-0', 'scale-100'];
+
+        window.addEventListener('scroll', () => {
+          if (!bboText || !bboRobot) return;
+
+          // Hiển thị Robot và Nội dung
+          bboText.classList.add(...textExpandClasses);
+          bboRobot.classList.add(...robotExpandClasses);
+
+          // Xóa timer cũ nếu đang có
+          clearTimeout(bboTimer);
+
+          // Thu hồi sau 4 giây
+          bboTimer = setTimeout(() => {
+            bboText.classList.remove(...textExpandClasses);
+            bboRobot.classList.remove(...robotExpandClasses);
+          }, 4000);
+        }, { passive: true });
+      })();
     </script>
 
 
     <div class="fixed bottom-6 right-6 z-[9999] flex flex-col items-end gap-3 pointer-events-none">
 
+      <!-- Robot Image Container -->
+      <div id="bbo-robot-container" 
+           class="w-24 sm:w-32 transition-all duration-700 ease-in-out opacity-0 translate-y-8 scale-50 origin-bottom pointer-events-auto">
+        <img src="img/robot_bbo_tean.jpg" alt="BBO Robot Assistant" 
+             class="w-full drop-shadow-2xl">
+      </div>
+
       <div class="group pointer-events-auto">
         <a href="https://bbotech.vn/services/" target="_blank"
-           class="flex items-center bg-white/80 backdrop-blur-xl p-2 rounded-full
+          class="flex items-center bg-white/80 backdrop-blur-xl p-2 rounded-full
                   border border-stone-200 shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white active:scale-95">
                   
           <div class="relative w-10 h-10 sm:w-12 sm:h-12 shrink-0">
             <div class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full animate-pulse opacity-20"></div>
             <img src="img/logo_bbo_team_white.jpg" alt="BBO Team"
-                 class="relative w-full h-full object-cover rounded-full border-2 border-white shadow-sm">
+                class="relative w-full h-full object-cover rounded-full border-2 border-white shadow-sm">
             <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></div>
           </div>
-    
-          <div class="flex flex-col whitespace-nowrap overflow-hidden transition-all duration-500 ease-in-out
-                      max-w-0 opacity-0 group-hover:max-w-[250px] group-hover:opacity-100 group-hover:ml-3 group-hover:pr-4
-                      sm:max-w-[250px] sm:opacity-100 sm:ml-3 sm:pr-4">
+
+          <div id="bbo-text-container" class="flex flex-col whitespace-nowrap overflow-hidden transition-all duration-500 ease-in-out
+                      max-w-0 opacity-0 group-hover:max-w-[250px] group-hover:opacity-100 group-hover:ml-3 group-hover:pr-4">
             <span class="text-[10px] font-bold text-stone-500 uppercase tracking-tighter leading-none mb-1">Đối tác công nghệ</span>
             <div class="flex items-center gap-1.5">
               <span class="text-sm sm:text-base font-black text-on-surface">Thiết kế <span class="text-primary">Website</span></span>
@@ -1754,13 +1761,13 @@
           </div>
         </a>
       </div>
-    
+
       <div class="hidden sm:flex items-center gap-2 pointer-events-auto">
         <div class="bg-glass px-3 py-1.5 rounded-2xl border border-white/50 shadow-sm text-[11px] font-medium text-on-surface-variant">
           Nâng tầm thương hiệu của bạn ngay 🚀
         </div>
       </div>
-    
+
     </div>
 
   </body>
