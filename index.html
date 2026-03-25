@@ -1,1090 +1,1677 @@
 <!DOCTYPE html>
 <html lang="vi" class="scroll-smooth">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fresh Tươi | Ẩm Thực Đường Phố Thảo Mộc</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinh Tố Bin | Ẩm Thực Đường Phố Thảo Mộc</title>
 
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
 
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "surface":                       "#fdf9f0",
-            "on-surface":                    "#1c1c16",
-            "on-surface-variant":            "#59413e",
-            "surface-bright":                "#fdf9f0",
-            "surface-dim":                   "#dddad1",
-            "surface-container-lowest":      "#ffffff",
-            "surface-container-low":         "#f7f3ea",
-            "surface-container":             "#f1eee5",
-            "surface-container-high":        "#ece8df",
-            "surface-container-highest":     "#e6e2d9",
-            "background":                    "#fdf9f0",
-            "on-background":                 "#1c1c16",
-            "primary":                       "#ae2828",
-            "on-primary":                    "#ffffff",
-            "primary-container":             "#d0413d",
-            "on-primary-container":          "#fffbff",
-            "primary-fixed":                 "#ffdad6",
-            "primary-fixed-dim":             "#ffb3ad",
-            "on-primary-fixed":              "#410003",
-            "on-primary-fixed-variant":      "#8f0e16",
-            "inverse-primary":               "#ffb3ad",
-            "secondary":                     "#526444",
-            "on-secondary":                  "#ffffff",
-            "secondary-container":           "#d2e6bf",
-            "on-secondary-container":        "#566848",
-            "secondary-fixed":               "#d5e9c2",
-            "secondary-fixed-dim":           "#b9cda7",
-            "on-secondary-fixed":            "#111f07",
-            "on-secondary-fixed-variant":    "#3b4c2e",
-            "tertiary":                      "#835100",
-            "on-tertiary":                   "#ffffff",
-            "tertiary-container":            "#a46700",
-            "on-tertiary-container":         "#fffbff",
-            "tertiary-fixed":                "#ffddb9",
-            "tertiary-fixed-dim":            "#ffb961",
-            "on-tertiary-fixed":             "#2b1700",
-            "on-tertiary-fixed-variant":     "#663e00",
-            "error":                         "#ba1a1a",
-            "on-error":                      "#ffffff",
-            "error-container":               "#ffdad6",
-            "on-error-container":            "#93000a",
-            "outline":                       "#8d706d",
-            "outline-variant":               "#e1bfbb",
-            "surface-tint":                  "#b12a2a",
-            "surface-variant":               "#e6e2d9",
-            "inverse-surface":               "#31302b",
-            "inverse-on-surface":            "#f4f0e7",
-          },
-          fontFamily: {
-            headline: ["Newsreader", "serif"],
-            body:     ["Inter", "sans-serif"],
-            label:    ["Inter", "sans-serif"],
-          },
-          borderRadius: {
-            DEFAULT: "0.25rem",
-            lg:      "0.5rem",
-            xl:      "0.75rem",
-            full:    "9999px",
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface":                       "#fdf9f0",
+              "on-surface":                    "#1c1c16",
+              "on-surface-variant":            "#59413e",
+              "surface-bright":                "#fdf9f0",
+              "surface-dim":                   "#dddad1",
+              "surface-container-lowest":      "#ffffff",
+              "surface-container-low":         "#f7f3ea",
+              "surface-container":             "#f1eee5",
+              "surface-container-high":        "#ece8df",
+              "surface-container-highest":     "#e6e2d9",
+              "background":                    "#fdf9f0",
+              "on-background":                 "#1c1c16",
+              "primary":                       "#ae2828",
+              "on-primary":                    "#ffffff",
+              "primary-container":             "#d0413d",
+              "on-primary-container":          "#fffbff",
+              "primary-fixed":                 "#ffdad6",
+              "primary-fixed-dim":             "#ffb3ad",
+              "on-primary-fixed":              "#410003",
+              "on-primary-fixed-variant":      "#8f0e16",
+              "inverse-primary":               "#ffb3ad",
+              "secondary":                     "#526444",
+              "on-secondary":                  "#ffffff",
+              "secondary-container":           "#d2e6bf",
+              "on-secondary-container":        "#566848",
+              "secondary-fixed":               "#d5e9c2",
+              "secondary-fixed-dim":           "#b9cda7",
+              "on-secondary-fixed":            "#111f07",
+              "on-secondary-fixed-variant":    "#3b4c2e",
+              "tertiary":                      "#835100",
+              "on-tertiary":                   "#ffffff",
+              "tertiary-container":            "#a46700",
+              "on-tertiary-container":         "#fffbff",
+              "tertiary-fixed":                "#ffddb9",
+              "tertiary-fixed-dim":            "#ffb961",
+              "on-tertiary-fixed":             "#2b1700",
+              "on-tertiary-fixed-variant":     "#663e00",
+              "error":                         "#ba1a1a",
+              "on-error":                      "#ffffff",
+              "error-container":               "#ffdad6",
+              "on-error-container":            "#93000a",
+              "outline":                       "#8d706d",
+              "outline-variant":               "#e1bfbb",
+              "surface-tint":                  "#b12a2a",
+              "surface-variant":               "#e6e2d9",
+              "inverse-surface":               "#31302b",
+              "inverse-on-surface":            "#f4f0e7",
+            },
+            fontFamily: {
+              headline: ["Newsreader", "serif"],
+              body:     ["Inter", "sans-serif"],
+              label:    ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg:      "0.5rem",
+              xl:      "0.75rem",
+              full:    "9999px",
+            },
           },
         },
-      },
-    };
-  </script>
+      };
+    </script>
 
-  <style>
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-    }
-    .bg-glass {
-      background: rgba(253, 249, 240, 0.70);
-      backdrop-filter: blur(12px);
-    }
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
-</head>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .bg-glass {
+        background: rgba(253, 249, 240, 0.70);
+        backdrop-filter: blur(12px);
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .menu-scroll-area {
+        max-height: 580px;      /* chiều cao tối đa */
+        overflow-y: auto;       /* BẬT thanh cuộn dọc */
+        padding-right: 6px;
+        scrollbar-width: thin;
+        scrollbar-color: #b9cda7 transparent;
+      }
 
-<body class="bg-background font-body text-on-background
-             selection:bg-secondary-container selection:text-on-secondary-container">
+      /* ── NAV SCROLL EFFECT ─────────────────── */
+      #main-nav {
+        transition: background 0.4s ease, box-shadow 0.4s ease;
+      }
+      #main-nav.nav-scrolled {
+        background: rgba(253, 249, 240, 0.93);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        box-shadow: 0 2px 24px rgba(28,28,22,0.08);
+      }
 
-  <!-- ════════════════════════════════════════
-       THANH ĐIỀU HƯỚNG
-  ════════════════════════════════════════ -->
-  <nav class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-transparent">
-    <div class="flex items-center justify-between max-w-screen-2xl mx-auto px-6 py-4">
+      /* ── NAV LINKS ─────────────────────────── */
+      .nav-link {
+        position: relative;
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: #59413e;
+        letter-spacing: -0.01em;
+        text-decoration: none;
+        padding-bottom: 3px;
+        transition: color 0.25s;
+      }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0; left: 0;
+        width: 0; height: 1.5px;
+        background: #ae2828;
+        border-radius: 9999px;
+        transition: width 0.3s cubic-bezier(.4,0,.2,1);
+      }
+      .nav-link:hover,
+      .nav-link.active { color: #ae2828; }
+      .nav-link:hover::after,
+      .nav-link.active::after { width: 100%; }
 
-      <!-- Logo -->
-      <a href="#" class="text-2xl font-headline italic font-bold text-red-700">Fresh Tươi</a>
+      /* Badge "Mới" */
+      .nav-badge {
+        display: inline-block;
+        font-size: 0.58rem;
+        font-style: normal;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        background: #d2e6bf;
+        color: #3b4c2e;
+        padding: 1px 7px;
+        border-radius: 9999px;
+        vertical-align: middle;
+        margin-left: 5px;
+        position: relative;
+        top: -2px;
+      }
 
-      <!-- Liên kết desktop -->
-      <div class="hidden md:flex items-center gap-8">
-        <a href="#home"
-           class="font-headline italic text-lg tracking-tight text-red-700 font-bold border-b-2 border-red-700">
-          Trang Chủ
+      /* Separator dot */
+      .nav-sep {
+        width: 3px; height: 3px;
+        background: #b9cda7;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      /* ── CART BUTTON ───────────────────────── */
+      .nav-cart-btn {
+        position: relative;
+        width: 40px; height: 40px;
+        border-radius: 50%;
+        border: 1.5px solid #e1bfbb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #59413e;
+        cursor: pointer;
+        background: transparent;
+        transition: border-color 0.2s, background 0.2s, transform 0.2s;
+      }
+      .nav-cart-btn:hover {
+        border-color: #ae2828;
+        background: #ffdad6;
+        color: #ae2828;
+        transform: scale(1.08);
+      }
+
+      /* ── CTA BUTTON ────────────────────────── */
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #ae2828;
+        color: #fff;
+        padding: 9px 22px;
+        border-radius: 9999px;
+        font-weight: 700;
+        font-size: 0.875rem;
+        letter-spacing: 0.03em;
+        box-shadow: 0 4px 16px rgba(174,40,40,0.3);
+        text-decoration: none;
+        transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      }
+      .nav-cta:hover {
+        background: #c43030;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(174,40,40,0.4);
+      }
+      .nav-cta:active { transform: translateY(0); }
+      .nav-cta .material-symbols-outlined {
+        font-size: 16px;
+        font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 20;
+      }
+
+      /* ── HAMBURGER (MOBILE) ────────────────── */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 6px;
+        border: none;
+        background: transparent;
+      }
+      .hamburger span {
+        display: block;
+        width: 22px; height: 2px;
+        background: #59413e;
+        border-radius: 9999px;
+        transition: transform 0.3s, opacity 0.3s, width 0.3s;
+      }
+      .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      .hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
+      .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+      @media (max-width: 768px) { .hamburger { display: flex; } }
+
+      /* ── MOBILE DROPDOWN ──────────────────── */
+      #mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: rgba(253,249,240,0.97);
+        backdrop-filter: blur(20px);
+        border-top: 1px solid #e1bfbb;
+        padding: 1.5rem 1.5rem 2rem;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 12px 40px rgba(28,28,22,0.1);
+      }
+      #mobile-menu.open { display: flex; }
+      .mobile-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-bottom: 1px solid #f1eee5;
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #1c1c16;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .mobile-link:hover { color: #ae2828; }
+      .mobile-link .material-symbols-outlined {
+        font-size: 18px;
+        color: #b9cda7;
+      }
+    </style>
+  </head>
+
+  <body class="bg-background font-body text-on-background
+              selection:bg-secondary-container selection:text-on-secondary-container">
+
+    <!-- ════════════════════════════════════════
+        THANH ĐIỀU HƯỚNG
+    ════════════════════════════════════════ -->
+    <nav id="main-nav" class="fixed top-0 inset-x-0 z-50">
+      <div class="relative max-w-screen-xl mx-auto px-6 py-3 flex items-center justify-between">
+    
+        <!-- ── LOGO (code của bạn) ────────────── -->
+        <a href="#" class="group flex items-center gap-3.5 hover:gap-4 transition-all duration-300 no-underline">
+    
+          <!-- Icon wrapper -->
+          <div class="relative">
+    
+            <!-- Glow effect -->
+            <div class="absolute -inset-2 bg-gradient-to-r from-secondary/30 via-primary/20 to-secondary/30
+                        rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+    
+            <!-- Logo icon -->
+            <div class="relative w-11 h-11 bg-white/90 backdrop-blur-md rounded-2xl
+                        shadow-sm border border-stone-100 flex items-center justify-center
+                        group-hover:rotate-[-4deg] group-hover:scale-105 transition-all duration-500 ease-out">
+              <span class="material-symbols-outlined text-primary text-2xl
+                          group-hover:text-secondary transition-all"
+                    style="font-variation-settings:'FILL' 1;">
+                local_drink
+              </span>
+              <!-- Tick badge -->
+              <div class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-secondary rounded-full
+                          flex items-center justify-center shadow-sm border border-white">
+                <span class="material-symbols-outlined text-white text-[9px]"
+                      style="font-variation-settings:'wght' 700;">check</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Text -->
+          <div class="flex flex-col">
+            <span class="text-[9px] font-black uppercase tracking-[0.5em] text-secondary/80 leading-none mb-0.5">
+              Fresh & Organic
+            </span>
+            <div class="text-2xl md:text-3xl font-headline italic font-black tracking-tighter flex items-center">
+              <span class="text-primary group-hover:text-red-500 transition-colors">Sinh Tố</span>
+              <span class="ml-1.5 bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent
+                          font-extrabold tracking-tight relative inline-block">
+                Bin
+                <svg class="absolute -bottom-1 left-0 w-full h-1.5 text-secondary/40
+                            group-hover:text-secondary/70 group-hover:translate-y-[1px]
+                            transition-all duration-300"
+                    viewBox="0 0 100 10" preserveAspectRatio="none">
+                  <path d="M0 5 Q 25 0 50 5 T 100 5"
+                        fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </div>
+          </div>
         </a>
-        <a href="#menu"
-           class="font-headline italic text-lg tracking-tight text-stone-600 hover:text-red-600 transition-colors duration-300">
-          Nước Ép
-        </a>
-        <a href="#tacos"
-           class="font-headline italic text-lg tracking-tight text-stone-600 hover:text-red-600 transition-colors duration-300">
-          Bánh Taco
-        </a>
-        <a href="#story"
-           class="font-headline italic text-lg tracking-tight text-stone-600 hover:text-red-600 transition-colors duration-300">
-          Câu Chuyện
-        </a>
-      </div>
-
-      <!-- Hành động -->
-      <div class="flex items-center gap-6">
-        <button class="material-symbols-outlined text-on-surface hover:scale-110 transition-transform"
-                aria-label="Giỏ hàng">
-          shopping_bag
-        </button>
-        <a href="tel:+84933611538"
-           aria-label="Call to order at +84 0797467390"
-           class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold shadow-lg
-                  hover:opacity-90 active:scale-95 transition-all">
-          Đặt Ngay
-        </a>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- ════════════════════════════════════════
-       HERO
-  ════════════════════════════════════════ -->
-  <header class="relative min-h-screen flex items-center overflow-hidden bg-surface pt-20">
-
-    <!-- Nền kết cấu -->
-    <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
-      <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-secondary-container to-transparent"></div>
-      <img
-        class="w-full h-full object-cover"
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmQB1vh4x0DaSG4YDSBCQePqdOLIyFKQR4umWwjn5_YVY_-f5Z-u_1--F1zv_-lcWsl-PrWbsZUcYuNutrZdY1HlxfTlR01wJkS0lRXU3UKTfqXmTQE3R5p9LW29ybjiMzL_-mSMdZ95UlxbXjNJd9o0tELmAusfR9XVk5KoMuLBveIWsHH8A-GgjQ410dpDriIBUl8krZg4l6LwHePN6_3mtUWKMOkVOBUOAEe0ltyPbuqWm-hSpli5ShEUEDoUNAvvZ8kgO2MgU"
-        alt=""
-        aria-hidden="true"
-      />
-    </div>
-
-    <div class="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-
-      <!-- Nội dung -->
-      <div class="space-y-8">
-        <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full
-                    bg-secondary-fixed text-on-secondary-fixed-variant
-                    font-label text-sm font-semibold tracking-wider">
-          <span class="material-symbols-outlined text-sm"
-                style="font-variation-settings:'FILL' 1;">eco</span>
-          <span class="uppercase">Ẩm Thực Đường Phố Thảo Mộc</span>
+    
+        <!-- ── DESKTOP LINKS ──────────────────── -->
+        <div class="hidden md:flex items-center gap-2">
+          <a href="#home"  class="nav-link active">Trang Chủ</a>
+          <div class="nav-sep"></div>
+          <a href="#menu"  class="nav-link">Thực Đơn <span class="nav-badge">Mới</span></a>
+          <div class="nav-sep"></div>
+          <a href="#tacos" class="nav-link">Bánh Tacos</a>
+          <div class="nav-sep"></div>
+          <a href="#story" class="nav-link">Câu Chuyện</a>
         </div>
-
-        <h1 class="font-headline text-6xl md:text-8xl text-on-surface leading-[1.1] tracking-tight italic">
-          Sinh Tố <span class="text-secondary">Tươi Ngon</span> &amp; Nước Ép
-          Làm Mới <span class="text-primary">Mỗi Ngày</span>
-        </h1>
-
-        <p class="text-xl text-on-surface-variant max-w-lg font-light leading-relaxed">
-          100% nguyên liệu tự nhiên • Giao hàng tươi mỗi ngày tận cửa nhà bạn. • Trải nghiệm sự kết hợp sống động giữa vườn xanh và đường phố.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-4 pt-4">
-          <a href="#menu"
-             class="bg-secondary text-on-secondary px-10 py-4 rounded-full text-lg font-bold
-                    shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all text-center">
-            Xem Thực Đơn
+    
+        <!-- ── ACTIONS ────────────────────────── -->
+        <div class="flex items-center gap-3">
+          <a href="tel:0933611538" class="nav-cta hidden sm:inline-flex">
+            <span class="material-symbols-outlined">phone_in_talk</span>
+            Đặt Ngay
           </a>
-          <a href="#tacos"
-             class="bg-surface-container-highest text-on-surface px-10 py-4 rounded-full text-lg font-bold
-                    hover:bg-surface-container-high transition-all text-center">
-            Khám Phá Taco
-          </a>
-        </div>
-      </div>
-
-      <!-- Ảnh hero -->
-      <div class="relative hidden md:block">
-        <div class="absolute -top-20 -right-20 w-96 h-96 bg-secondary-container rounded-full blur-3xl opacity-30 pointer-events-none"></div>
-
-        <div class="relative z-10 rotate-3 hover:rotate-0 transition-transform duration-700">
-          <img
-            class="rounded-3xl shadow-2xl border-[12px] border-white max-w-md ml-auto"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4kFNtACADyktvkVOrldQ__OMjGJbAfqs5VTvansaHUqlV_3QEDK4BxUQhfvnYnDNBUBbSDjM_M83bf1BHPwMa6AzKrXj90B-VJcwyuMoGsZPcdn4V6sSi1cweYXuOfomryXISRegYiECYSu9do-2OP6QXFbznn3U63j9FKy3CvPHkS93m22P58yh2tOEeZEgOrocXBjtGPoUGEgJYxvuzkHRQHCCgOEk6Z_k7FtvBCD2u5yE_Xap8KtrlcSuiBp6do6fvUM-rmm4"
-            alt="Sinh tố dâu tây và xoài trong ly cao trang trí lá bạc hà tươi"
-          />
-
-          <!-- Huy hiệu nổi -->
-          <div class="absolute -bottom-10 -left-10 bg-white p-6 rounded-2xl shadow-xl
-                      flex items-center gap-4 max-w-xs">
-            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shrink-0">
-              <span class="material-symbols-outlined">local_fire_department</span>
-            </div>
-            <div>
-              <p class="font-bold text-on-surface">Đang Hot</p>
-              <p class="text-sm text-on-surface-variant">Sinh Tố Sầu Riêng Đặc Biệt</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </header>
-
-
-  <!-- ════════════════════════════════════════
-       GIÁ TRỊ CỐT LÕI
-  ════════════════════════════════════════ -->
-  <section class="py-24 bg-surface-container-low">
-    <div class="container mx-auto px-6">
-      <div class="grid md:grid-cols-3 gap-8">
-
-        <!-- Thẻ: Nguyên Liệu Vườn Tươi -->
-        <div class="p-10 bg-surface rounded-3xl shadow-sm hover:shadow-lg transition-shadow group">
-          <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-6
-                      group-hover:scale-110 transition-transform">
-            <span class="material-symbols-outlined text-on-secondary-container text-3xl">agriculture</span>
-          </div>
-          <h3 class="font-headline text-2xl mb-4 italic">Nguyên Liệu Vườn Tươi</h3>
-          <p class="text-on-surface-variant leading-relaxed">
-            Trực tiếp từ vườn thảo mộc địa phương đến ly của bạn. Chúng tôi không bao giờ đánh đổi sự tươi ngon của nguyên liệu.
-          </p>
-        </div>
-
-        <!-- Thẻ: Không Đường Nhân Tạo -->
-        <div class="p-10 bg-surface rounded-3xl shadow-sm hover:shadow-lg transition-shadow group">
-          <div class="w-14 h-14 bg-primary-fixed rounded-2xl flex items-center justify-center mb-6
-                      group-hover:scale-110 transition-transform">
-            <span class="material-symbols-outlined text-on-primary-fixed-variant text-3xl">do_not_disturb_on</span>
-          </div>
-          <h3 class="font-headline text-2xl mb-4 italic">Không Đường Nhân Tạo</h3>
-          <p class="text-on-surface-variant leading-relaxed">
-            Chỉ được làm ngọt bởi thiên nhiên. Chúng tôi dựa vào độ chín của trái cây để tạo nên từng giọt hương vị.
-          </p>
-        </div>
-
-        <!-- Thẻ: Giao Hàng Nhanh -->
-        <div class="p-10 bg-surface rounded-3xl shadow-sm hover:shadow-lg transition-shadow group">
-          <div class="w-14 h-14 bg-tertiary-fixed rounded-2xl flex items-center justify-center mb-6
-                      group-hover:scale-110 transition-transform">
-            <span class="material-symbols-outlined text-on-tertiary-fixed-variant text-3xl">electric_moped</span>
-          </div>
-          <h3 class="font-headline text-2xl mb-4 italic">Nhanh &amp; Tươi Ngon</h3>
-          <p class="text-on-surface-variant leading-relaxed">
-            Giao hàng nhanh nhất Quận Tân Bình. Xay ngay lúc bạn đặt, giao đến khi vẫn còn lạnh nguyên.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ════════════════════════════════════════
-       THỰC ĐƠN (TAB: SINH TỐ / NƯỚC ÉP / ĐẶC BIỆT)
-  ════════════════════════════════════════ -->
-  <style>
-    .menu-item.is-active { background-color: #d2e6bf; }
-    .menu-item.is-active .item-name { color: #566848; }
-    .menu-item.is-active .item-desc { color: rgba(86,104,72,0.7); }
-    .menu-item.is-active .item-price { color: #566848; }
-    #preview-img { transition: opacity 0.22s ease, transform 0.38s ease; }
-    #preview-img.fading { opacity: 0; transform: scale(1.05); }
-  </style>
-
-  <section id="menu" class="py-24 bg-surface">
-    <div class="container mx-auto px-6">
-
-      <!-- Hàng tiêu đề -->
-      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-        <div class="max-w-xl">
-          <span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">Trải Nghiệm Hương Vị</span>
-          <h2 class="font-headline text-5xl italic leading-tight">Thực Đơn Thảo Mộc Tinh Tuyển</h2>
-        </div>
-        <div class="flex bg-surface-container-high p-1.5 rounded-full w-full md:w-auto">
-          <button id="tab-smoothies" onclick="switchTab('smoothies')"
-                  class="tab-btn flex-1 md:flex-none px-4 md:px-8 py-3 rounded-full bg-secondary text-on-secondary font-bold shadow-md transition-all text-sm md:text-base whitespace-nowrap">
-            Sinh Tố
-          </button>
-          <button id="tab-juices" onclick="switchTab('juices')"
-                  class="tab-btn flex-1 md:flex-none px-4 md:px-8 py-3 rounded-full hover:bg-surface-container-highest transition-all font-medium text-sm md:text-base whitespace-nowrap">
-            Nước Ép
-          </button>
-          <button id="tab-specials" onclick="switchTab('specials')"
-                  class="tab-btn flex-1 md:flex-none px-4 md:px-8 py-3 rounded-full hover:bg-surface-container-highest transition-all font-medium text-sm md:text-base whitespace-nowrap">
-            Đặc Biệt
+          <button class="hamburger md:hidden" id="hamburger-btn"
+                  aria-label="Menu" onclick="toggleMobileMenu()">
+            <span></span><span></span><span></span>
           </button>
         </div>
+    
       </div>
-
-      <!-- Layout: ảnh preview trái + danh sách phải -->
-      <div class="grid md:grid-cols-12 gap-12 items-start">
-
-        <!-- Ảnh preview dùng chung -->
-        <div class="md:col-span-7 relative">
-          <div class="aspect-[4/5] overflow-hidden rounded-[2rem] bg-surface-container shadow-inner">
-            <img id="preview-img"
-                 class="w-full h-full object-cover"
-                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyiqd5lz0CQiQb611Q2o-Ec58ptG49LNSNautQylnvMDJ_F0BkvEsRLEwBe7h7Qi_1Pv1nT6DH94TvWHMPW8RJmsbztM8bGvdWBlEusY5Tkp0BMXA2oC5reqgnQEPGJsReq870cS-CeuR2Hu-f8pLmzBeUXg2HFQFwY9IpvuCyYp9tBZk-fZOh1YzV_YduxtjoMWUL_4NZf-Cu-XiE2jFDF_YxzRPAAVc-wKx3n5INaNz8SKYCqYEZPd0FoaeKsqe_qbNUh89LRM4"
-                 alt="Ảnh món" />
-          </div>
-          <div class="absolute bottom-8 left-8 right-8 bg-glass p-6 rounded-2xl border border-white/20">
-            <div class="flex justify-between items-center gap-3">
-              <div class="min-w-0">
-                <h4 id="preview-name" class="font-headline text-2xl italic truncate">Sinh Tố Chuối</h4>
-                <p id="preview-desc" class="text-on-surface-variant text-sm truncate">Béo thơm kinh điển</p>
-              </div>
-              <span id="preview-price" class="text-2xl font-bold text-secondary shrink-0">22K</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Danh sách món -->
-        <div class="md:col-span-5">
-
-          <!-- SINH TỐ -->
-          <div id="panel-smoothies" class="menu-panel space-y-3">
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'CHUỐI','Sinh tố chuối thơm mịn, dễ uống','22.000','https://lh3.googleusercontent.com/aida-public/AB6AXuCyiqd5lz0CQiQb611Q2o-Ec58ptG49LNSNautQylnvMDJ_F0BkvEsRLEwBe7h7Qi_1Pv1nT6DH94TvWHMPW8RJmsbztM8bGvdWBlEusY5Tkp0BMXA2oC5reqgnQEPGJsReq870cS-CeuR2Hu-f8pLmzBeUXg2HFQFwY9IpvuCyYp9tBZk-fZOh1YzV_YduxtjoMWUL_4NZf-Cu-XiE2jFDF_YxzRPAAVc-wKx3n5INaNz8SKYCqYEZPd0FoaeKsqe_qbNUh89LRM4')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
-                <div><h5 class="font-bold text-base item-name">CHUỐI</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố chuối thơm mịn, dễ uống</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">22.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'MÍT','Sinh tố mít thơm ngọt, sánh mịn','25.000','https://lh3.googleusercontent.com/aida-public/AB6AXuAPqzfwXdIcAbgFTFHRzTmx_G3mFIhOVvR64d9LwJwHfZPN5sceyC-5YIglExCFMIRnyedxLUB2HaFcOi4SkmVh42y_cENZQbltaZ4rde9TDAcv47Hh5SxvQKze-YBTLxlCamqjo1co3DNEN3I27wwlueQg0kyjhsq21mk6-1I4Bi5thjaMgj6rSPpDKt_GV86aeTcc3L_KU9sj35JR3sV8lVzH2IT2LpAw-YwxjbGQ3XfkrFS7AZvWFqqFWU9rb4kOhxlJ37ypT4Y')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
-                <div><h5 class="font-bold text-base item-name">MÍT</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố mít thơm ngọt, sánh mịn</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">25.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'XOÀI','Sinh tố xoài chua ngọt hài hòa','25.000','https://lh3.googleusercontent.com/aida-public/AB6AXuBjHEnPu_4ODb0r9mqDE5nl3Yg9HcXMGYTfnyK7Q8bMdNEE0NfHtHqcQeFpBCX_oNIDpfDtzNDc9HlQktPZVsU0ilbH4xPuO2xrqGJlu7ImaC2ZrLegnkVDeXapJc0-3wW6jdQd2UEJ1a_Jv3hu2CVjYzi-yJ9OUx9ukKJPxUHUDCjl-C7is2OKzpWYjlUgTPgUrNnBxflEEnfjPoaMCSEPNm5zfwDggw7lwvqjCMqHor-t1rnNzebZDLCJzGzOe-d9t8C3ht5NJf0')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
-                <div><h5 class="font-bold text-base item-name">XOÀI</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố xoài chua ngọt hài hòa</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">25.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'MÃNG CẦU','Sinh tố mãng cầu thơm chua dịu','25.000','https://lh3.googleusercontent.com/aida-public/AB6AXuCyiqd5lz0CQiQb611Q2o-Ec58ptG49LNSNautQylnvMDJ_F0BkvEsRLEwBe7h7Qi_1Pv1nT6DH94TvWHMPW8RJmsbztM8bGvdWBlEusY5Tkp0BMXA2oC5reqgnQEPGJsReq870cS-CeuR2Hu-f8pLmzBeUXg2HFQFwY9IpvuCyYp9tBZk-fZOh1YzV_YduxtjoMWUL_4NZf-Cu-XiE2jFDF_YxzRPAAVc-wKx3n5INaNz8SKYCqYEZPd0FoaeKsqe_qbNUh89LRM4')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
-                <div><h5 class="font-bold text-base item-name">MÃNG CẦU</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố mãng cầu thơm chua dịu</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">25.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'DÂU','Sinh tố dâu mát lạnh, chua ngọt','30.000','https://lh3.googleusercontent.com/aida-public/AB6AXuCyiqd5lz0CQiQb611Q2o-Ec58ptG49LNSNautQylnvMDJ_F0BkvEsRLEwBe7h7Qi_1Pv1nT6DH94TvWHMPW8RJmsbztM8bGvdWBlEusY5Tkp0BMXA2oC5reqgnQEPGJsReq870cS-CeuR2Hu-f8pLmzBeUXg2HFQFwY9IpvuCyYp9tBZk-fZOh1YzV_YduxtjoMWUL_4NZf-Cu-XiE2jFDF_YxzRPAAVc-wKx3n5INaNz8SKYCqYEZPd0FoaeKsqe_qbNUh89LRM4')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
-                <div><h5 class="font-bold text-base item-name">DÂU</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố dâu mát lạnh, chua ngọt</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">30.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'SẦU RIÊNG','Sầu riêng béo ngậy, thơm nồng','30.000','https://lh3.googleusercontent.com/aida-public/AB6AXuDzrx_C2WvMWBmSowFwApxYdHPg7IjWXM9gYA0xuEpQRBS8h58DMgQesmpcuO3ugDLPhG_BlnvNgoGejugCJy46bav3ZCQ1JbZWlchzeg0iygG4y_wgsg7VIc34xIpnaClO_GJ2HZzsmM9u4U42u7hLhhmBemxIaXjekHmr6rZNmsMn-BgTb4HkKNTsmCkM3mnhid5W__Ej_cFUjujFc-gegHaIIXBsKp9WcvFNfmjQ3hLVomTfLAAbH_WmO4DNnqEyxdMz1Hx8Xx8')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
-                <div><h5 class="font-bold text-base item-name">SẦU RIÊNG</h5><p class="text-xs text-on-surface-variant item-desc">Sầu riêng béo ngậy, thơm nồng</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">30.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'DƯA LƯỚI','Dưa lưới thanh mát, dịu ngọt','30.000','https://lh3.googleusercontent.com/aida-public/AB6AXuDzrx_C2WvMWBmSowFwApxYdHPg7IjWXM9gYA0xuEpQRBS8h58DMgQesmpcuO3ugDLPhG_BlnvNgoGejugCJy46bav3ZCQ1JbZWlchzeg0iygG4y_wgsg7VIc34xIpnaClO_GJ2HZzsmM9u4U42u7hLhhmBemxIaXjekHmr6rZNmsMn-BgTb4HkKNTsmCkM3mnhid5W__Ej_cFUjujFc-gegHaIIXBsKp9WcvFNfmjQ3hLVomTfLAAbH_WmO4DNnqEyxdMz1Hx8Xx8')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
-                <div><h5 class="font-bold text-base item-name">DƯA LƯỚI</h5><p class="text-xs text-on-surface-variant item-desc">Dưa lưới thanh mát, dịu ngọt</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">30.000</span>
-            </div>
-          </div>
-
-          <!-- NƯỚC ÉP -->
-          <div id="panel-juices" class="menu-panel hidden space-y-3">
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'ỔI ÉP','Ổi ép tươi mát, dễ uống','22.000','https://lh3.googleusercontent.com/aida-public/AB6AXuDo1LTjnG6Wj2bnz5AQqWGyyI13TcGdF0mkKgEkaPP9CXumIaLZ22Z7K5Q6XjtKCSHSxpy3G0jBYVy-TcjFIRQ9Xmmcw-Lxclq17vFc0oM8jFx3EKmqCOp1zgi0_fzTEEKOiVKTW6EiWtrRMP-6CWnRS6nU0hSxG8yMUr5QJymFxJyNrkH0sXAVdplFNSEN9ZkWeMusAonjSfdrhz8VsvbvQVyL1pmQF_lGQo_DeeJjKLU2LqSmEvziBVu2OCoBoyBEhuIse_pRGsg')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
-                <div><h5 class="font-bold text-base item-name">ỔI ÉP</h5><p class="text-xs text-on-surface-variant item-desc">Ổi ép tươi mát, dễ uống</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">22.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'CÓC ỔI','Cóc ổi chua ngọt, thơm mát','22.000','https://lh3.googleusercontent.com/aida-public/AB6AXuDo1LTjnG6Wj2bnz5AQqWGyyI13TcGdF0mkKgEkaPP9CXumIaLZ22Z7K5Q6XjtKCSHSxpy3G0jBYVy-TcjFIRQ9Xmmcw-Lxclq17vFc0oM8jFx3EKmqCOp1zgi0_fzTEEKOiVKTW6EiWtrRMP-6CWnRS6nU0hSxG8yMUr5QJymFxJyNrkH0sXAVdplFNSEN9ZkWeMusAonjSfdrhz8VsvbvQVyL1pmQF_lGQo_DeeJjKLU2LqSmEvziBVu2OCoBoyBEhuIse_pRGsg')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
-                <div><h5 class="font-bold text-base item-name">CÓC ỔI</h5><p class="text-xs text-on-surface-variant item-desc">Cóc ổi chua ngọt, thơm mát</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">22.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'DƯA HẤU','Dưa hấu ép mát lạnh, giải khát','22.000','https://lh3.googleusercontent.com/aida-public/AB6AXuDzrx_C2WvMWBmSowFwApxYdHPg7IjWXM9gYA0xuEpQRBS8h58DMgQesmpcuO3ugDLPhG_BlnvNgoGejugCJy46bav3ZCQ1JbZWlchzeg0iygG4y_wgsg7VIc34xIpnaClO_GJ2HZzsmM9u4U42u7hLhhmBemxIaXjekHmr6rZNmsMn-BgTb4HkKNTsmCkM3mnhid5W__Ej_cFUjujFc-gegHaIIXBsKp9WcvFNfmjQ3hLVomTfLAAbH_WmO4DNnqEyxdMz1Hx8Xx8')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
-                <div><h5 class="font-bold text-base item-name">DƯA HẤU</h5><p class="text-xs text-on-surface-variant item-desc">Dưa hấu ép mát lạnh, giải khát</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">22.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'CHANH DÂY','Chanh dây chua thơm, dễ uống','22.000','https://lh3.googleusercontent.com/aida-public/AB6AXuBjHEnPu_4ODb0r9mqDE5nl3Yg9HcXMGYTfnyK7Q8bMdNEE0NfHtHqcQeFpBCX_oNIDpfDtzNDc9HlQktPZVsU0ilbH4xPuO2xrqGJlu7ImaC2ZrLegnkVDeXapJc0-3wW6jdQd2UEJ1a_Jv3hu2CVjYzi-yJ9OUx9ukKJPxUHUDCjl-C7is2OKzpWYjlUgTPgUrNnBxflEEnfjPoaMCSEPNm5zfwDggw7lwvqjCMqHor-t1rnNzebZDLCJzGzOe-d9t8C3ht5NJf0')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
-                <div><h5 class="font-bold text-base item-name">CHANH DÂY</h5><p class="text-xs text-on-surface-variant item-desc">Chanh dây chua thơm, dễ uống</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">22.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'CÓC ÉP','Cóc ép chua thanh, mát lạnh','25.000','https://lh3.googleusercontent.com/aida-public/AB6AXuDo1LTjnG6Wj2bnz5AQqWGyyI13TcGdF0mkKgEkaPP9CXumIaLZ22Z7K5Q6XjtKCSHSxpy3G0jBYVy-TcjFIRQ9Xmmcw-Lxclq17vFc0oM8jFx3EKmqCOp1zgi0_fzTEEKOiVKTW6EiWtrRMP-6CWnRS6nU0hSxG8yMUr5QJymFxJyNrkH0sXAVdplFNSEN9ZkWeMusAonjSfdrhz8VsvbvQVyL1pmQF_lGQo_DeeJjKLU2LqSmEvziBVu2OCoBoyBEhuIse_pRGsg')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
-                <div><h5 class="font-bold text-base item-name">CÓC ÉP</h5><p class="text-xs text-on-surface-variant item-desc">Cóc ép chua thanh, mát lạnh</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">25.000</span>
-            </div>
-          </div>
-
-          <!-- ĐẶC BIỆT -->
-          <div id="panel-specials" class="menu-panel hidden space-y-3">
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'CHUỐI - ĐẬU','Chuối - đậu thơm béo, bùi','25.000','https://lh3.googleusercontent.com/aida-public/AB6AXuC4kFNtACADyktvkVOrldQ__OMjGJbAfqs5VTvansaHUqlV_3QEDK4BxUQhfvnYnDNBUBbSDjM_M83bf1BHPwMa6AzKrXj90B-VJcwyuMoGsZPcdn4V6sSi1cweYXuOfomryXISRegYiECYSu9do-2OP6QXFbznn3U63j9FKy3CvPHkS93m22P58yh2tOEeZEgOrocXBjtGPoUGEgJYxvuzkHRQHCCgOEk6Z_k7FtvBCD2u5yE_Xap8KtrlcSuiBp6do6fvUM-rmm4')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
-                <div><h5 class="font-bold text-base item-name">CHUỐI - ĐẬU</h5><p class="text-xs text-on-surface-variant item-desc">Chuối - đậu thơm béo, bùi</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">25.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'CHUỐI CACAO','Chuối cacao thơm ngậy, đậm vị','25.000','https://lh3.googleusercontent.com/aida-public/AB6AXuDzrx_C2WvMWBmSowFwApxYdHPg7IjWXM9gYA0xuEpQRBS8h58DMgQesmpcuO3ugDLPhG_BlnvNgoGejugCJy46bav3ZCQ1JbZWlchzeg0iygG4y_wgsg7VIc34xIpnaClO_GJ2HZzsmM9u4U42u7hLhhmBemxIaXjekHmr6rZNmsMn-BgTb4HkKNTsmCkM3mnhid5W__Ej_cFUjujFc-gegHaIIXBsKp9WcvFNfmjQ3hLVomTfLAAbH_WmO4DNnqEyxdMz1Hx8Xx8')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
-                <div><h5 class="font-bold text-base item-name">CHUỐI CACAO</h5><p class="text-xs text-on-surface-variant item-desc">Chuối cacao thơm ngậy, đậm vị</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">25.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'DỪA CACAO','Dừa cacao thơm béo, mát lạnh','25.000','https://lh3.googleusercontent.com/aida-public/AB6AXuAPqzfwXdIcAbgFTFHRzTmx_G3mFIhOVvR64d9LwJwHfZPN5sceyC-5YIglExCFMIRnyedxLUB2HaFcOi4SkmVh42y_cENZQbltaZ4rde9TDAcv47Hh5SxvQKze-YBTLxlCamqjo1co3DNEN3I27wwlueQg0kyjhsq21mk6-1I4Bi5thjaMgj6rSPpDKt_GV86aeTcc3L_KU9sj35JR3sV8lVzH2IT2LpAw-YwxjbGQ3XfkrFS7AZvWFqqFWU9rb4kOhxlJ37ypT4Y')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
-                <div><h5 class="font-bold text-base item-name">DỪA CACAO</h5><p class="text-xs text-on-surface-variant item-desc">Dừa cacao thơm béo, mát lạnh</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">25.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'MÍT ĐU ĐỦ','Mít đu đủ ngọt thơm, dễ uống','25.000','https://lh3.googleusercontent.com/aida-public/AB6AXuBjHEnPu_4ODb0r9mqDE5nl3Yg9HcXMGYTfnyK7Q8bMdNEE0NfHtHqcQeFpBCX_oNIDpfDtzNDc9HlQktPZVsU0ilbH4xPuO2xrqGJlu7ImaC2ZrLegnkVDeXapJc0-3wW6jdQd2UEJ1a_Jv3hu2CVjYzi-yJ9OUx9ukKJPxUHUDCjl-C7is2OKzpWYjlUgTPgUrNnBxflEEnfjPoaMCSEPNm5zfwDggw7lwvqjCMqHor-t1rnNzebZDLCJzGzOe-d9t8C3ht5NJf0')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
-                <div><h5 class="font-bold text-base item-name">MÍT ĐU ĐỦ</h5><p class="text-xs text-on-surface-variant item-desc">Mít đu đủ ngọt thơm, dễ uống</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">25.000</span>
-            </div>
-            <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
-                 onclick="selectItem(this,'ĐẬU XANH - SẦU RIÊNG','Đậu xanh sầu riêng béo thơm','25.000','https://lh3.googleusercontent.com/aida-public/AB6AXuC4kFNtACADyktvkVOrldQ__OMjGJbAfqs5VTvansaHUqlV_3QEDK4BxUQhfvnYnDNBUBbSDjM_M83bf1BHPwMa6AzKrXj90B-VJcwyuMoGsZPcdn4V6sSi1cweYXuOfomryXISRegYiECYSu9do-2OP6QXFbznn3U63j9FKy3CvPHkS93m22P58yh2tOEeZEgOrocXBjtGPoUGEgJYxvuzkHRQHCCgOEk6Z_k7FtvBCD2u5yE_Xap8KtrlcSuiBp6do6fvUM-rmm4')">
-              <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
-                <div><h5 class="font-bold text-base item-name">ĐẬU XANH - SẦU RIÊNG</h5><p class="text-xs text-on-surface-variant item-desc">Đậu xanh sầu riêng béo thơm</p></div>
-              </div>
-              <span class="font-bold text-sm item-price shrink-0">25.000</span>
-            </div>
-          </div>
-
-        </div>
+    
+      <!-- ── MOBILE DROPDOWN ─────────────────── -->
+      <div id="mobile-menu">
+        <a href="#home"  class="mobile-link" onclick="toggleMobileMenu()">Trang Chủ <span class="material-symbols-outlined">arrow_forward</span></a>
+        <a href="#menu"  class="mobile-link" onclick="toggleMobileMenu()">Thực Đơn  <span class="material-symbols-outlined">arrow_forward</span></a>
+        <a href="#tacos" class="mobile-link" onclick="toggleMobileMenu()">Bánh Taco <span class="material-symbols-outlined">arrow_forward</span></a>
+        <a href="#story" class="mobile-link" onclick="toggleMobileMenu()">Câu Chuyện <span class="material-symbols-outlined">arrow_forward</span></a>
+        <a href="tel:0933611538" class="nav-cta mt-5 justify-center">
+          <span class="material-symbols-outlined">phone_in_talk</span>
+          Gọi Đặt Ngay
+        </a>
       </div>
-
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════
-       BÁNH TACO
-  ════════════════════════════════════════ -->
-  <section id="tacos" class="py-32 bg-primary overflow-hidden relative">
-
-    <!-- Sọc chéo trang trí -->
-    <div class="absolute top-0 right-0 w-1/2 h-full bg-black/10 -skew-x-12 translate-x-1/2 pointer-events-none"></div>
-
-    <div class="container mx-auto px-6 relative z-10">
-
-      <!-- Tiêu đề + nút điều hướng -->
-      <div class="mb-16 flex items-end justify-between">
-        <div>
-          <span class="text-white/60 font-bold uppercase tracking-[0.3em] text-sm mb-4 block">
-            Hương Vị Đường Phố
-          </span>
-          <h2 class="font-headline text-7xl italic text-white leading-none">
-            Dãy <span class="text-tertiary-fixed">Bánh Taco</span> Đường Phố
-          </h2>
-        </div>
-        <!-- Nút Trước / Tiếp -->
-        <div class="flex gap-3 shrink-0">
-          <button id="taco-prev"
-                  aria-label="Taco trước"
-                  class="w-12 h-12 rounded-full border-2 border-white/30 flex items-center justify-center
-                         text-white hover:bg-white/20 active:scale-95 transition-all">
-            <span class="material-symbols-outlined">arrow_back</span>
-          </button>
-          <button id="taco-next"
-                  aria-label="Taco tiếp theo"
-                  class="w-12 h-12 rounded-full border-2 border-white/30 flex items-center justify-center
-                         text-white hover:bg-white/20 active:scale-95 transition-all">
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Thanh cuộn ngang -->
-      <div id="taco-track" class="flex gap-8 overflow-x-auto no-scrollbar pb-12 snap-x snap-mandatory scroll-smooth">
-        <!-- #01 Trứng + Xúc Xích -->
-        <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
-          <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
-            <img
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/491927492_2095271377620038_824391514049431264_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=b8oL2tGOTs0Q7kNvwGKBKKG&_nc_oc=AdqQtV5gow40e9DLCDn7xhGjS3w3yBiNQgBrwmZH1q5od3QuFRysaqNe4IitJMYBRjxhqdvwKyi3fVITn8SXlswK&_nc_zt=23&_nc_ht=scontent.fsgn5-15.fna&_nc_gid=yCwatxlMfHCEz3OZS9EqqQ&_nc_ss=7a30f&oh=00_AfwhshaWNMKoFgMq89FytpU56su0soMZP4JMDT8GBxJjxA&oe=69C84FF3"
-              alt="Taco trứng và xúc xích"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <div class="absolute top-6 left-6 bg-primary-container text-white
-                        px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-              Bán Chạy
-            </div>
-            <div class="absolute bottom-6 left-6">
-              <h4 class="text-3xl font-bold text-white mb-2">TRỨNG + XÚC XÍCH</h4>
-              <p class="text-white/70 italic">Trứng mềm, xúc xích đậm vị</p>
-            </div>
-          </div>
-          <div class="flex justify-between items-center px-4">
-            <span class="text-4xl font-black text-white italic opacity-40">#01</span>
-            <span class="text-2xl font-bold text-tertiary-fixed">25K</span>
-          </div>
-        </div>
-
-        <!-- #02 Bò Băm Bơ Tỏi -->
-        <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
-          <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
-            <img
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/488618176_1052190273611161_6653528804567197395_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=MXITskd4ZesQ7kNvwG2knqE&_nc_oc=AdqsdZnE6-bppa_-mSai3OPU-HK_v3un94_uwBgLVM7LVJRxqQSLOmauKO2fxbcXSLqCaOi_SmFlUYThKCdmQZ4S&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=6L8P6sisG85x62laEjLLlg&_nc_ss=7a30f&oh=00_AfxwzBtF4annByEeaj2meCF9MPbpaCTZZifAx0s0EAv1ww&oe=69C82AA7"
-              alt="Taco bò băm bơ tỏi"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <div class="absolute bottom-6 left-6">
-              <h4 class="text-3xl font-bold text-white mb-2">BÒ BĂM BƠ TỎI</h4>
-              <p class="text-white/70 italic">Bò băm thơm béo bơ tỏi</p>
-            </div>
-          </div>
-          <div class="flex justify-between items-center px-4">
-            <span class="text-4xl font-black text-white italic opacity-40">#02</span>
-            <span class="text-2xl font-bold text-tertiary-fixed">25K</span>
-          </div>
-        </div>
-
-        <!-- #03 Gà Chiên Giòn Bơ Cay -->
-        <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
-          <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
-            <img
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              src="https://khietminhbakery.com/wp-content/uploads/2025/09/cong-thuc-lam-banh-tacos-phap-ngon.jpg"
-              alt="Taco gà chiên giòn bơ cay"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <div class="absolute bottom-6 left-6">
-              <h4 class="text-3xl font-bold text-white mb-2">GÀ CHIÊN GIÒN BƠ CAY</h4>
-              <p class="text-white/70 italic">Gà giòn rụm, sốt bơ cay</p>
-            </div>
-          </div>
-          <div class="flex justify-between items-center px-4">
-            <span class="text-4xl font-black text-white italic opacity-40">#03</span>
-            <span class="text-2xl font-bold text-tertiary-fixed">25K</span>
-          </div>
-        </div>
-
-        <!-- #04 Trứng + Xúc Xích + Phô Mai -->
-        <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
-          <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
-            <img
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/490270023_2002220270303075_4394966500128998028_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=zWoJyQQBwGoQ7kNvwEVLpWr&_nc_oc=Adq9ceRvbkyNhJnnjTHwtJoefB75kG8odwzkzm4RZ-2ZJYpFiHYt9e-4OK6q_ZR2zmL66pGcMYT0af_iDQ49v9Ce&_nc_zt=23&_nc_ht=scontent.fsgn5-15.fna&_nc_gid=j0b_cemLi-deV3--eSdM1w&_nc_ss=7a30f&oh=00_AfyAZxcbcQza4XoOaKT1_JxrFQhsxgdmNhhTk4HOEANIAQ&oe=69C8317A"
-              alt="Taco trứng xúc xích phô mai"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <div class="absolute bottom-6 left-6">
-              <h4 class="text-3xl font-bold text-white mb-2">TRỨNG + XÚC XÍCH + PHÔ MAI</h4>
-              <p class="text-white/70 italic">Thêm phô mai béo ngậy hấp dẫn</p>
-            </div>
-          </div>
-          <div class="flex justify-between items-center px-4">
-            <span class="text-4xl font-black text-white italic opacity-40">#04</span>
-            <span class="text-2xl font-bold text-tertiary-fixed">30K</span>
-          </div>
-        </div>
-
-        <!-- #05 Bò Băm + Phô Mai -->
-        <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
-          <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
-            <img
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/558763549_1794716861407667_43807818672528413_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=TRSnNWawOrQQ7kNvwErYHNG&_nc_oc=Adr1ScC9y8FQo7x6TXoHNkEuX-P1c2OFt7AoS4-Q2WsEhtS2XGZPV0_CP6lkFrDrCFHPUpO4HmLy1aLuSqUjsdjB&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=GmjfLSPR_dTab9hb89dEHQ&_nc_ss=7a30f&oh=00_AfwbnrLqBKl7PT6gfHGSMLmnb3ny5Iha4OWPQgwp36SorA&oe=69C83DA2"
-              alt="Taco bò băm phô mai"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <div class="absolute bottom-6 left-6">
-              <h4 class="text-3xl font-bold text-white mb-2">BÒ BĂM + PHÔ MAI</h4>
-              <p class="text-white/70 italic">Bò băm kết hợp phô mai tan</p>
-            </div>
-          </div>
-          <div class="flex justify-between items-center px-4">
-            <span class="text-4xl font-black text-white italic opacity-40">#05</span>
-            <span class="text-2xl font-bold text-tertiary-fixed">30K</span>
-          </div>
-        </div>
-
-        <!-- #06 Gà Chiên Giòn + Phô Mai -->
-        <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
-          <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
-            <img
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/517762195_2474368462918834_1898354087290483052_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=zaqS8OMWBvMQ7kNvwGJIyvk&_nc_oc=Adq-5N4EojV3B8cMBtQ1lJHIVD9ICiws512j-BiKWVMdQbk6B50tGRQUVehRldwUCEL8fM2tu7dDNiaKne5VTgp9&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=CPxMb9j0BoqTmCE9lf1VgA&_nc_ss=7a30f&oh=00_AfzsR5ipP6tr3MGul5fwfygMV3XvQiN15y1L7xqVRzmGUQ&oe=69C8435C"
-              alt="Taco gà chiên giòn phô mai"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <div class="absolute bottom-6 left-6">
-              <h4 class="text-3xl font-bold text-white mb-2">GÀ CHIÊN GIÒN + PHÔ MAI</h4>
-              <p class="text-white/70 italic">Gà giòn thêm lớp phô mai</p>
-            </div>
-          </div>
-          <div class="flex justify-between items-center px-4">
-            <span class="text-4xl font-black text-white italic opacity-40">#06</span>
-            <span class="text-2xl font-bold text-tertiary-fixed">30K</span>
-          </div>
-        </div>
-
-        <!-- #07 Đặc Biệt -->
-        <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
-          <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
-            <img
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              src="https://cooponline.vn/tin-tuc/wp-content/uploads/2025/11/banh-tacos-phap-mon-an-gay-sot-sai-gon-co-gi-dac-biet-3.png"
-              alt="Taco đặc biệt của quán"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <div class="absolute bottom-6 left-6">
-              <h4 class="text-3xl font-bold text-white mb-2">ĐẶC BIỆT</h4>
-              <p class="text-white/70 italic">Phiên bản đặc biệt đậm vị nhất</p>
-            </div>
-          </div>
-          <div class="flex justify-between items-center px-4">
-            <span class="text-4xl font-black text-white italic opacity-40">#07</span>
-            <span class="text-2xl font-bold text-tertiary-fixed">45K</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Chấm chỉ báo -->
-      <div id="taco-dots" class="flex gap-2 justify-center mt-2">
-        <button class="taco-dot w-8 h-2 rounded-full bg-white transition-all" data-index="0" aria-label="Slide 1"></button>
-        <button class="taco-dot w-2 h-2 rounded-full bg-white/30 transition-all" data-index="1" aria-label="Slide 2"></button>
-        <button class="taco-dot w-2 h-2 rounded-full bg-white/30 transition-all" data-index="2" aria-label="Slide 3"></button>
-        <button class="taco-dot w-2 h-2 rounded-full bg-white/30 transition-all" data-index="3" aria-label="Slide 4"></button>
-        <button class="taco-dot w-2 h-2 rounded-full bg-white/30 transition-all" data-index="4" aria-label="Slide 5"></button>
-        <button class="taco-dot w-2 h-2 rounded-full bg-white/30 transition-all" data-index="5" aria-label="Slide 6"></button>
-      </div>
-
-    </div>
-  </section>
+    </nav>
 
 
-  <!-- ════════════════════════════════════════
-       TẠI SAO CHỌN CHÚNG TÔI
-  ════════════════════════════════════════ -->
-  <section class="py-24 bg-surface-container-highest">
-    <div class="container mx-auto px-6 text-center">
+    <!-- ════════════════════════════════════════
+        HERO
+    ════════════════════════════════════════ -->
+    <header class="relative min-h-screen flex items-center overflow-hidden bg-surface pt-20">
 
-      <h2 class="font-headline text-5xl mb-16 italic">Tiêu Chuẩn Tươi Ngon</h2>
-
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
-
-        <div class="space-y-4">
-          <div class="mx-auto w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
-            <span class="material-symbols-outlined text-4xl text-secondary">nutrition</span>
-          </div>
-          <h5 class="font-bold text-lg uppercase tracking-widest text-on-surface">Tươi Mỗi Ngày</h5>
-        </div>
-
-        <div class="space-y-4">
-          <div class="mx-auto w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
-            <span class="material-symbols-outlined text-4xl text-primary">payments</span>
-          </div>
-          <h5 class="font-bold text-lg uppercase tracking-widest text-on-surface">Giá Phải Chăng</h5>
-        </div>
-
-        <div class="space-y-4">
-          <div class="mx-auto w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
-            <span class="material-symbols-outlined text-4xl text-tertiary">speed</span>
-          </div>
-          <h5 class="font-bold text-lg uppercase tracking-widest text-on-surface">Giao Hàng Nhanh</h5>
-        </div>
-
-        <div class="space-y-4">
-          <div class="mx-auto w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
-            <span class="material-symbols-outlined text-4xl text-on-secondary-container">nature_people</span>
-          </div>
-          <h5 class="font-bold text-lg uppercase tracking-widest text-on-surface">100% Tự Nhiên</h5>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ════════════════════════════════════════
-       GALLERY BENTO
-  ════════════════════════════════════════ -->
-  <section class="py-24 bg-surface">
-    <div class="container mx-auto px-6">
-      <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
-
-        <!-- Lớn: col-span-2 row-span-2 -->
-        <div class="col-span-2 row-span-2 relative rounded-3xl overflow-hidden group">
-          <img
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPqzfwXdIcAbgFTFHRzTmx_G3mFIhOVvR64d9LwJwHfZPN5sceyC-5YIglExCFMIRnyedxLUB2HaFcOi4SkmVh42y_cENZQbltaZ4rde9TDAcv47Hh5SxvQKze-YBTLxlCamqjo1co3DNEN3I27wwlueQg0kyjhsq21mk6-1I4Bi5thjaMgj6rSPpDKt_GV86aeTcc3L_KU9sj35JR3sV8lVzH2IT2LpAw-YwxjbGQ3XfkrFS7AZvWFqqFWU9rb4kOhxlJ37ypT4Y"
-            alt="Góc nhìn từ trên xuống của tô sinh tố nhiều màu với granola và trái cây thái lát"
-          />
-        </div>
-
-        <!-- Góc trên bên phải -->
-        <div class="col-span-1 row-span-1 relative rounded-3xl overflow-hidden group">
-          <img
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjHEnPu_4ODb0r9mqDE5nl3Yg9HcXMGYTfnyK7Q8bMdNEE0NfHtHqcQeFpBCX_oNIDpfDtzNDc9HlQktPZVsU0ilbH4xPuO2xrqGJlu7ImaC2ZrLegnkVDeXapJc0-3wW6jdQd2UEJ1a_Jv3hu2CVjYzi-yJ9OUx9ukKJPxUHUDCjl-C7is2OKzpWYjlUgTPgUrNnBxflEEnfjPoaMCSEPNm5zfwDggw7lwvqjCMqHor-t1rnNzebZDLCJzGzOe-d9t8C3ht5NJf0"
-            alt="Salad tươi với gà nướng và lát bơ"
-          />
-        </div>
-
-        <!-- Cực phải: row-span-2 -->
-        <div class="col-span-1 row-span-2 relative rounded-3xl overflow-hidden group">
-          <img
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzrx_C2WvMWBmSowFwApxYdHPg7IjWXM9gYA0xuEpQRBS8h58DMgQesmpcuO3ugDLPhG_BlnvNgoGejugCJy46bav3ZCQ1JbZWlchzeg0iygG4y_wgsg7VIc34xIpnaClO_GJ2HZzsmM9u4U42u7hLhhmBemxIaXjekHmr6rZNmsMn-BgTb4HkKNTsmCkM3mnhid5W__Ej_cFUjujFc-gegHaIIXBsKp9WcvFNfmjQ3hLVomTfLAAbH_WmO4DNnqEyxdMz1Hx8Xx8"
-            alt="Tô rau củ nhiều màu sắc với nguyên liệu tự nhiên"
-          />
-        </div>
-
-        <!-- Góc dưới bên phải -->
-        <div class="col-span-1 row-span-1 relative rounded-3xl overflow-hidden group">
-          <img
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo1LTjnG6Wj2bnz5AQqWGyyI13TcGdF0mkKgEkaPP9CXumIaLZ22Z7K5Q6XjtKCSHSxpy3G0jBYVy-TcjFIRQ9Xmmcw-Lxclq17vFc0oM8jFx3EKmqCOp1zgi0_fzTEEKOiVKTW6EiWtrRMP-6CWnRS6nU0hSxG8yMUr5QJymFxJyNrkH0sXAVdplFNSEN9ZkWeMusAonjSfdrhz8VsvbvQVyL1pmQF_lGQo_DeeJjKLU2LqSmEvziBVu2OCoBoyBEhuIse_pRGsg"
-            alt="Trưng bày thẩm mỹ của trái cây họ cam quýt và thảo mộc tươi"
-          />
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ════════════════════════════════════════
-       LỐI SỐNG / CÂU CHUYỆN
-  ════════════════════════════════════════ -->
-  <section id="story" class="py-24 bg-secondary-container">
-    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-
-      <!-- Hình ảnh -->
-      <div class="order-2 md:order-1">
+      <!-- Nền kết cấu -->
+      <div id="home" class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+        <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-secondary-container to-transparent"></div>
         <img
-          class="rounded-[3rem] shadow-2xl w-full"
-          src="https://hoaquafuji.com/storage/app/media/uploaded-files/sinh-to-trai-cay-4-min.jpg"
-          alt="Người mặc trang phục thể thao cầm ly nước xanh tươi, cười trong công viên đô thị nắng"
+          class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmQB1vh4x0DaSG4YDSBCQePqdOLIyFKQR4umWwjn5_YVY_-f5Z-u_1--F1zv_-lcWsl-PrWbsZUcYuNutrZdY1HlxfTlR01wJkS0lRXU3UKTfqXmTQE3R5p9LW29ybjiMzL_-mSMdZ95UlxbXjNJd9o0tELmAusfR9XVk5KoMuLBveIWsHH8A-GgjQ410dpDriIBUl8krZg4l6LwHePN6_3mtUWKMOkVOBUOAEe0ltyPbuqWm-hSpli5ShEUEDoUNAvvZ8kgO2MgU"
+          alt=""
+          aria-hidden="true"
         />
       </div>
 
-      <!-- Nội dung -->
-      <div class="order-1 md:order-2 space-y-8">
-        <h2 class="font-headline text-6xl italic leading-tight">
-          Sống Cùng
-          <span class="text-on-secondary-container underline underline-offset-8 decoration-secondary">
-            Thói Quen Tươi Xanh
-          </span>
-        </h2>
+      <div class="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
 
-        <p class="text-xl text-on-secondary-container/80 leading-relaxed font-light">
-          Tại Fresh Tươi, chúng tôi tin rằng sức khỏe không phải là gánh nặng — đó là hương vị. Những hỗn hợp thảo mộc của chúng tôi được pha chế để tiếp thêm năng lượng cho bạn trong khi thỏa mãn tâm hồn. Dù là sinh tố buổi sáng hay bánh taco đêm khuya, chúng tôi mang đến sự cân bằng mà bạn cần.
-        </p>
-
-        <div class="flex items-center gap-6">
-          <div class="text-center">
-            <span class="block text-4xl font-headline italic">10k+</span>
-            <span class="text-sm uppercase tracking-widest opacity-60">Khách Hàng Hài Lòng</span>
+        <!-- Nội dung -->
+        <div class="space-y-8">
+          <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full
+                      bg-secondary-fixed text-on-secondary-fixed-variant
+                      font-label text-sm font-semibold tracking-wider">
+            <span class="material-symbols-outlined text-sm"
+                  style="font-variation-settings:'FILL' 1;">eco</span>
+            <span class="uppercase">Ẩm Thực Đường Phố Thảo Mộc</span>
           </div>
-          <div class="w-px h-12 bg-on-secondary-container/20"></div>
-          <div class="text-center">
-            <span class="block text-4xl font-headline italic">Quận Tân Bình</span>
-            <span class="text-sm uppercase tracking-widest opacity-60">Niềm Tự Hào Địa Phương</span>
+
+          <h1 class="font-headline text-6xl md:text-8xl text-on-surface leading-[1.1] tracking-tight italic">
+            Sinh Tố <span class="text-secondary">Tươi Ngon</span> &amp; Nước Ép
+            Làm Mới <span class="text-primary">Mỗi Ngày</span>
+          </h1>
+
+          <p class="text-xl text-on-surface-variant max-w-lg font-light leading-relaxed">
+            100% nguyên liệu tự nhiên • Giao hàng tươi mỗi ngày tận cửa nhà bạn. • Trải nghiệm sự kết hợp sống động giữa vườn xanh và đường phố.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href="#menu"
+              class="bg-secondary text-on-secondary px-10 py-4 rounded-full text-lg font-bold
+                      shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all text-center">
+              Xem Thực Đơn
+            </a>
+            <a href="#tacos"
+              class="bg-surface-container-highest text-on-surface px-10 py-4 rounded-full text-lg font-bold
+                      hover:bg-surface-container-high transition-all text-center">
+              Khám Phá Taco
+            </a>
+          </div>
+        </div>
+
+        <!-- Ảnh hero -->
+        <div class="relative hidden md:block">
+          <div class="absolute -top-20 -right-20 w-96 h-96 bg-secondary-container rounded-full blur-3xl opacity-30 pointer-events-none"></div>
+
+          <div class="relative z-10 rotate-3 hover:rotate-0 transition-transform duration-700">
+            <img
+              class="rounded-3xl shadow-2xl border-[12px] border-white max-w-md ml-auto"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4kFNtACADyktvkVOrldQ__OMjGJbAfqs5VTvansaHUqlV_3QEDK4BxUQhfvnYnDNBUBbSDjM_M83bf1BHPwMa6AzKrXj90B-VJcwyuMoGsZPcdn4V6sSi1cweYXuOfomryXISRegYiECYSu9do-2OP6QXFbznn3U63j9FKy3CvPHkS93m22P58yh2tOEeZEgOrocXBjtGPoUGEgJYxvuzkHRQHCCgOEk6Z_k7FtvBCD2u5yE_Xap8KtrlcSuiBp6do6fvUM-rmm4"
+              alt="Sinh tố dâu tây và xoài trong ly cao trang trí lá bạc hà tươi"
+            />
+
+            <!-- Huy hiệu nổi -->
+            <div class="absolute -bottom-10 -left-10 bg-white p-6 rounded-2xl shadow-xl
+                        flex items-center gap-4 max-w-xs">
+              <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shrink-0">
+                <span class="material-symbols-outlined">local_fire_department</span>
+              </div>
+              <div>
+                <p class="font-bold text-on-surface">Đang Hot</p>
+                <p class="text-sm text-on-surface-variant">Sinh Tố Sầu Riêng Đặc Biệt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+
+    <!-- ════════════════════════════════════════
+        GIÁ TRỊ CỐT LÕI
+    ════════════════════════════════════════ -->
+    <section class="py-24 bg-surface-container-low">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+
+          <!-- Thẻ: Nguyên Liệu Vườn Tươi -->
+          <div class="p-10 bg-surface rounded-3xl shadow-sm hover:shadow-lg transition-shadow group">
+            <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-6
+                        group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-on-secondary-container text-3xl">agriculture</span>
+            </div>
+            <h3 class="font-headline text-2xl mb-4 italic">Nguyên Liệu Vườn Tươi</h3>
+            <p class="text-on-surface-variant leading-relaxed">
+              Trực tiếp từ vườn thảo mộc địa phương đến ly của bạn. Chúng tôi không bao giờ đánh đổi sự tươi ngon của nguyên liệu.
+            </p>
+          </div>
+
+          <!-- Thẻ: Không Đường Nhân Tạo -->
+          <div class="p-10 bg-surface rounded-3xl shadow-sm hover:shadow-lg transition-shadow group">
+            <div class="w-14 h-14 bg-primary-fixed rounded-2xl flex items-center justify-center mb-6
+                        group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-on-primary-fixed-variant text-3xl">do_not_disturb_on</span>
+            </div>
+            <h3 class="font-headline text-2xl mb-4 italic">Không Đường Nhân Tạo</h3>
+            <p class="text-on-surface-variant leading-relaxed">
+              Chỉ được làm ngọt bởi thiên nhiên. Chúng tôi dựa vào độ chín của trái cây để tạo nên từng giọt hương vị.
+            </p>
+          </div>
+
+          <!-- Thẻ: Giao Hàng Nhanh -->
+          <div class="p-10 bg-surface rounded-3xl shadow-sm hover:shadow-lg transition-shadow group">
+            <div class="w-14 h-14 bg-tertiary-fixed rounded-2xl flex items-center justify-center mb-6
+                        group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-on-tertiary-fixed-variant text-3xl">electric_moped</span>
+            </div>
+            <h3 class="font-headline text-2xl mb-4 italic">Nhanh &amp; Tươi Ngon</h3>
+            <p class="text-on-surface-variant leading-relaxed">
+              Giao hàng nhanh nhất Quận Tân Bình. Xay ngay lúc bạn đặt, giao đến khi vẫn còn lạnh nguyên.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+        THỰC ĐƠN (TAB: SINH TỐ / NƯỚC ÉP / ĐẶC BIỆT)
+    ════════════════════════════════════════ -->
+    <style>
+      .menu-item.is-active { background-color: #d2e6bf; }
+      .menu-item.is-active .item-name { color: #566848; }
+      .menu-item.is-active .item-desc { color: rgba(86,104,72,0.7); }
+      .menu-item.is-active .item-price { color: #566848; }
+      #preview-img { transition: opacity 0.22s ease, transform 0.38s ease; }
+      #preview-img.fading { opacity: 0; transform: scale(1.05); }
+    </style>
+
+    <section id="menu" class="py-24 bg-surface">
+      <div class="container mx-auto px-6">
+  
+        <!-- Hàng tiêu đề -->
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div class="max-w-xl">
+            <span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">Trải Nghiệm Hương Vị</span>
+            <h2 class="font-headline text-5xl italic leading-tight">Thực Đơn Thảo Mộc Tinh Tuyển</h2>
+          </div>
+          <div class="flex bg-surface-container-high p-1.5 rounded-full w-full md:w-auto">
+            <button id="tab-smoothies" onclick="switchTab('smoothies')"
+                    class="tab-btn flex-1 md:flex-none px-4 md:px-8 py-3 rounded-full bg-secondary text-on-secondary font-bold shadow-md transition-all text-sm md:text-base whitespace-nowrap">
+              Sinh Tố
+            </button>
+            <button id="tab-juices" onclick="switchTab('juices')"
+                    class="tab-btn flex-1 md:flex-none px-4 md:px-8 py-3 rounded-full hover:bg-surface-container-highest transition-all font-medium text-sm md:text-base whitespace-nowrap">
+              Nước Ép
+            </button>
+            <button id="tab-specials" onclick="switchTab('specials')"
+                    class="tab-btn flex-1 md:flex-none px-4 md:px-8 py-3 rounded-full hover:bg-surface-container-highest transition-all font-medium text-sm md:text-base whitespace-nowrap">
+              Đặc Biệt
+            </button>
+          </div>
+        </div>
+  
+        <!-- Layout: ảnh preview trái + danh sách phải -->
+        <div class="grid md:grid-cols-12 gap-10 items-start">
+  
+          <!-- Ảnh preview dùng chung – PHIÊN BẢN NÂNG CẤP -->
+          <div class="md:col-span-5 relative md:sticky md:top-24">
+            <!-- Khung hình chính (hiệu ứng kính + glow) -->
+            <div class="relative aspect-[4/5] overflow-hidden rounded-3xl bg-surface-container shadow-2xl 
+                        ring-1 ring-white/30 ring-offset-4 ring-offset-surface-container
+                        transition-all duration-500 hover:ring-secondary/30 hover:shadow-3xl">
+              
+              <!-- Glow layer -->
+              <div class="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10 
+                          opacity-60 pointer-events-none z-10"></div>
+              
+              <!-- Hình ảnh -->
+              <img id="preview-img"
+                  class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2024_5_12_638511085664907773_sinh-to-chuoi-sua-chua.jpg"
+                  alt="Ảnh món" />
+
+              <!-- Badge nổi góc trên -->
+              <div class="absolute top-6 left-6 bg-white/95 text-secondary text-xs font-bold px-4 py-1.5 
+                          rounded-2xl shadow-md flex items-center gap-1.5 z-20 backdrop-blur-md">
+                <span class="material-symbols-outlined text-base">eco</span>
+                FRESH TODAY
+              </div>
+
+              <!-- Overlay thông tin -->
+              <div class="absolute bottom-6 left-6 right-6 bg-glass/95 backdrop-blur-2xl p-7 rounded-3xl 
+                          border border-white/40 shadow-2xl z-20">
+                <div class="flex justify-between items-end gap-4">
+                  <div class="min-w-0 flex-1">
+                    <h4 id="preview-name" class="font-headline text-3xl italic leading-none tracking-tighter text-on-surface">
+                      Sinh Tố Chuối
+                    </h4>
+                    <p id="preview-desc" class="text-on-surface-variant mt-1 text-sm line-clamp-2">
+                      Béo thơm kinh điển
+                    </p>
+                  </div>
+                  
+                  <!-- Giá nổi bật -->
+                  <div class="text-right shrink-0">
+                    <span id="preview-price" class="text-4xl font-black text-secondary leading-none">22.000 VNĐ</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Viền sáng dưới đáy -->
+              <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-white/60 to-transparent 
+                          rounded-full blur-sm"></div>
+            </div>
+          </div>
+  
+          <!-- Danh sách món -->
+          <div class="md:col-span-7">
+            <div class="menu-list-wrapper">
+              <div class="menu-scroll-area">
+    
+                <!-- SINH TỐ -->
+                <div id="panel-smoothies" class="menu-panel menu-scroll-area space-y-3">
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CHUỐI','Sinh tố chuối thơm mịn, dễ uống','22.000 VNĐ','https://i.pinimg.com/736x/e0/ad/ee/e0adeeddf0de470986d71925ad24e571.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">CHUỐI</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố chuối thơm mịn, dễ uống</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'ĐU ĐỦ','Sinh tố đu đủ thơm béo, dễ uống','22.000 VNĐ','https://i.pinimg.com/736x/64/2e/65/642e65e63927a9fd4dec5bbd79894d9e.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">ĐU ĐỦ</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố đu đủ thơm béo, dễ uống</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'MÍT','Sinh tố mít thơm ngọt, sánh mịn','25.000 VNĐ','https://i.pinimg.com/736x/27/ed/99/27ed99e6e2249560fefe0483c3a6d321.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">MÍT</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố mít thơm ngọt, sánh mịn</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'XOÀI','Sinh tố xoài chua ngọt hài hòa','25.000 VNĐ','https://i.pinimg.com/736x/a9/f4/ce/a9f4cec6e92fa1c23ec63554c1df3cda.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">XOÀI</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố xoài chua ngọt hài hòa</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'MÃNG CẦU','Sinh tố mãng cầu thơm chua dịu','25.000 VNĐ','https://i.pinimg.com/1200x/9c/c3/d7/9cc3d780016a2132e969613a724dfc4d.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">MÃNG CẦU</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố mãng cầu thơm chua dịu</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'DÂU','Sinh tố dâu mát lạnh, chua ngọt','30.000 VNĐ','https://i.pinimg.com/1200x/4a/50/88/4a5088c4b31bb5795b84797cd97fb5f2.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">DÂU</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố dâu mát lạnh, chua ngọt</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">30.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'SẦU RIÊNG','Sầu riêng béo ngậy, thơm nồng','30.000 VNĐ','https://i.pinimg.com/1200x/7e/89/ee/7e89ee4fab7e3c3330eafcc0d5fd3c6c.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">SẦU RIÊNG</h5><p class="text-xs text-on-surface-variant item-desc">Sầu riêng béo ngậy, thơm nồng</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">30.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'DƯA LƯỚI','Dưa lưới thanh mát, dịu ngọt','30.000 VNĐ','https://i.pinimg.com/736x/88/da/14/88da14c11483427bdb01b99d232adc75.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">DƯA LƯỚI</h5><p class="text-xs text-on-surface-variant item-desc">Dưa lưới thanh mát, dịu ngọt</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">30.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'ĐẬU XANH','Sinh tố đậu xanh bùi béo, thanh mát','22.000 VNĐ','https://i.pinimg.com/736x/c6/e4/15/c6e415075335a6eaeb0c9c5c98e2eb40.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">ĐẬU XANH</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố đậu xanh bùi béo, thanh mát</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'DƯA GANG','Sinh tố dưa gang ngọt dịu, mát lành','22.000 VNĐ','https://i.pinimg.com/1200x/51/d6/d3/51d6d3693201e915c89f55023c29854f.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">DƯA GANG</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố dưa gang ngọt dịu, mát lành</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'DỪA','Sinh tố dừa béo thơm, mát lạnh','25.000 VNĐ','https://i.pinimg.com/736x/98/17/4b/98174b9bb5b6dce2593d4e14f631e4a5.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">DỪA</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố dừa béo thơm, mát lạnh</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'SAPOCHE','Sinh tố sapoche ngọt đậm, sánh mịn','25.000 VNĐ','https://cdn.tgdd.vn/Files/2019/04/01/1158144/lam-sinh-to-sa-po-che-don-gian-tai-nha-202109291205020460.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">SAPOCHE</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố sapoche ngọt đậm, sánh mịn</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'BƠ','Sinh tố bơ béo ngậy, mịn màng','30.000 VNĐ','https://i.pinimg.com/736x/18/dd/9b/18dd9ba775636c93e7c36bf678da0646.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">BƠ</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố bơ béo ngậy, mịn màng</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">30.000 VNĐ</span>
+                  </div>
+      
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'HẠT SEN','Sinh tố hạt sen thanh nhẹ, bổ dưỡng','30.000 VNĐ','https://cdn.tgdd.vn/Files/2018/12/20/1139342/5-cach-nau-sua-sen-ngon-me-ly-don-gian-tai-nha-4.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">eco</span>
+                      <div><h5 class="font-bold text-base item-name">HẠT SEN</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố hạt sen thanh nhẹ, bổ dưỡng</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">30.000 VNĐ</span>
+                  </div>
+                </div>
+      
+                <!-- NƯỚC ÉP -->
+                <div id="panel-juices" class="menu-panel menu-scroll-area hidden space-y-3">
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'ỔI ÉP','Ổi ép tươi mát, dễ uống','22.000 VNĐ','https://i.pinimg.com/736x/e1/3d/53/e13d5344c73b7c010a39661eb1c7f4cf.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">ỔI ÉP</h5><p class="text-xs text-on-surface-variant item-desc">Ổi ép tươi mát, dễ uống</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CÓC ỔI','Cóc ổi chua ngọt, thơm mát','22.000 VNĐ','https://i.pinimg.com/736x/a5/42/a7/a542a795892df00e83e64ff02fbdadf2.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">CÓC ỔI</h5><p class="text-xs text-on-surface-variant item-desc">Cóc ổi chua ngọt, thơm mát</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'DƯA HẤU','Dưa hấu ép mát lạnh, giải khát','22.000 VNĐ','https://i.pinimg.com/1200x/b4/5f/1b/b45f1b042701d611041acad66e01bcb6.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">DƯA HẤU</h5><p class="text-xs text-on-surface-variant item-desc">Dưa hấu ép mát lạnh, giải khát</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CHANH DÂY','Chanh dây chua thơm, dễ uống','22.000 VNĐ','https://i.pinimg.com/736x/f1/cb/32/f1cb3215b92aaed0fd2375d13e297216.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">CHANH DÂY</h5><p class="text-xs text-on-surface-variant item-desc">Chanh dây chua thơm, dễ uống</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CACAO','Cacao đậm vị, thơm béo','22.000 VNĐ','https://i.pinimg.com/736x/58/2d/96/582d9660710a8a37addb296f9a8b45fe.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">CACAO</h5><p class="text-xs text-on-surface-variant item-desc">Cacao đậm vị, thơm béo</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'RAU MÁ','Rau má mát lành, thanh vị','22.000 VNĐ','https://cdn.tgdd.vn/Files/2017/11/29/1045869/rau-ma-co-cong-dung-gi-nhung-sai-lam-khi-uong-nuoc-rau-ma-202107131558101340.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">RAU MÁ</h5><p class="text-xs text-on-surface-variant item-desc">Rau má mát lành, thanh vị</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'SỮA CHUA','Sữa chua béo mịn, chua thanh','22.000 VNĐ','https://i.pinimg.com/1200x/ec/45/40/ec45406a740a3f88230d26b99b5e68ed.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">SỮA CHUA</h5><p class="text-xs text-on-surface-variant item-desc">Sữa chua béo mịn, chua thanh</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">22.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CÓC ÉP','Cóc ép chua thanh, mát lạnh','25.000 VNĐ','https://bazaarvietnam.vn/wp-content/uploads/2024/12/harper-bazaar-nuoc-ep-coc-co-tot-khong-freepik-e1733061123123.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">CÓC ÉP</h5><p class="text-xs text-on-surface-variant item-desc">Cóc ép chua thanh, mát lạnh</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'BẠC HÀ','Bạc hà mát lạnh, sảng khoái','20.000 VNĐ','https://images2.thanhnien.vn/zoom/686_429/Uploaded/congthang/2016_07_17/nuoceplabacha_shutterstock_120823264_TXZS.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">BẠC HÀ</h5><p class="text-xs text-on-surface-variant item-desc">Bạc hà mát lạnh, sảng khoái</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">20.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'MẠCHCA','Matcha thơm đậm, vị béo dịu','20.000 VNĐ','https://medianews.thieunien.vn/uploads/2025/07/24/screenshot-2025-07-24-at-15-1753345987.png')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">MATCHA</h5><p class="text-xs text-on-surface-variant item-desc">Matcha thơm đậm, vị béo dịu</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">20.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                    onclick="selectItem(this, 'CÀ RỐT','Nước ép cà rốt ngọt nhẹ, tốt cho sức khỏe','25.000 VNĐ','https://cdn.tgdd.vn/2021/10/CookRecipe/GalleryStep/thanh-pham-2321.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">CÀ RỐT</h5><p class="text-xs text-on-surface-variant item-desc">Nước ép cà rốt ngọt nhẹ, tốt cho sức khỏe</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CÀ CHUA','Nước ép cà chua thanh mát, giàu vitamin','25.000 VNĐ','https://i.pinimg.com/736x/a1/e3/f3/a1e3f330a2ae3bbad6611ec199e680d2.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">CÀ CHUA</h5><p class="text-xs text-on-surface-variant item-desc">Nước ép cà chua thanh mát, giàu vitamin</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'SƠ RI','Nước ép sơ ri chua ngọt, giàu vitamin C','25.000 VNĐ','https://source.unsplash.com/736x960/?acerola,juice')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">SƠ RI</h5><p class="text-xs text-on-surface-variant item-desc">Nước ép sơ ri chua ngọt, giàu vitamin C</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CAM ÉP','Cam ép tươi mát, giải khát tự nhiên','25.000 VNĐ','https://i.pinimg.com/736x/3a/61/bc/3a61bc4bf11ec1f1d9df3cb75b604d38.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">CAM ÉP</h5><p class="text-xs text-on-surface-variant item-desc">Cam ép tươi mát, giải khát tự nhiên</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'BOM-LÊ','Nước ép bom-lê ngọt dịu, thanh mát','25.000 VNĐ','https://truejuice.vn/articles/wp-content/uploads/2021/04/nuoc-ep-le.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">BOM-LÊ</h5><p class="text-xs text-on-surface-variant item-desc">Nước ép bom-lê ngọt dịu, thanh mát</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CHANH TUYẾT','Chanh tuyết chua nhẹ, mát lạnh sảng khoái','20.000 VNĐ','https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/163544/Originals/chanh-tuyet-2.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">CHANH TUYẾT</h5><p class="text-xs text-on-surface-variant item-desc">Chanh tuyết chua nhẹ, mát lạnh sảng khoái</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">20.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'THƠM CÀ RỐT','Thơm kết hợp cà rốt, vị ngọt thanh','25.000 VNĐ','https://cdn.tgdd.vn/Files/2019/07/13/1179198/cach-lam-nuoc-ep-ca-rot-dua-201907131613169449.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">THƠM CÀ RỐT</h5><p class="text-xs text-on-surface-variant item-desc">Thơm kết hợp cà rốt, vị ngọt thanh</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'THƠM ÉP','Nước ép thơm chua ngọt, giải nhiệt','25.000 VNĐ','https://i.pinimg.com/1200x/99/60/ce/9960ce5a8ff269c5732b210533bc1b0d.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">THƠM ÉP</h5><p class="text-xs text-on-surface-variant item-desc">Nước ép thơm chua ngọt, giải nhiệt</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CÀ CẢI','Nước ép cà cải thanh mát, tốt cho sức khỏe','25.000 VNĐ','https://cdn2.tuoitre.vn/thumb_w/480/471584752817336320/2025/7/17/screenshot-2025-07-17-220437-1752764696844631968430.png')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                      <div><h5 class="font-bold text-base item-name">CÀ CẢI</h5><p class="text-xs text-on-surface-variant item-desc">Nước ép cà cải thanh mát, tốt cho sức khỏe</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                </div>
+      
+                <!-- ĐẶC BIỆT -->
+                <div id="panel-specials" class="menu-panel menu-scroll-area hidden space-y-3">
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CHUỐI - ĐẬU','Chuối - đậu thơm béo, bùi','25.000 VNĐ','https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/sinh_to_chuoi_dau_phong_01_3ae740feb1.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">CHUỐI - ĐẬU</h5><p class="text-xs text-on-surface-variant item-desc">Chuối - đậu thơm béo, bùi</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CHUỐI CACAO','Chuối cacao thơm ngậy, đậm vị','25.000 VNĐ','https://lirp.cdn-website.com/ad0ecff6/dms3rep/multi/opt/cong-thuc-sinh-to-cacao-chuoi-ngon-640w.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">CHUỐI CACAO</h5><p class="text-xs text-on-surface-variant item-desc">Chuối cacao thơm ngậy, đậm vị</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'DỪA CACAO','Dừa cacao thơm béo, mát lạnh','25.000 VNĐ','https://i.pinimg.com/736x/7b/6e/af/7b6eaf2d10e7025c368f4bf3a6c4f9d0.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">DỪA CACAO</h5><p class="text-xs text-on-surface-variant item-desc">Dừa cacao thơm béo, mát lạnh</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'MÍT ĐU ĐỦ','Mít đu đủ ngọt thơm, dễ uống','25.000 VNĐ','https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2024_3_27_638471146356445097_cach-lam-sinh-to-du-du.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">MÍT ĐU ĐỦ</h5><p class="text-xs text-on-surface-variant item-desc">Mít đu đủ ngọt thơm, dễ uống</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'ĐẬU XANH - SẦU RIÊNG','Đậu xanh sầu riêng béo thơm','25.000 VNĐ','https://cdn.tgdd.vn/Files/2022/04/27/1428805/6-cach-lam-sinh-to-sau-rieng-thom-beo-cuc-giai-khat-tai-nha-202204271414099633.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">ĐẬU XANH - SẦU RIÊNG</h5><p class="text-xs text-on-surface-variant item-desc">Đậu xanh sầu riêng béo thơm</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'CHUỐI - DỪA','Chuối - dừa béo thơm, mát lành','25.000 VNĐ','https://storage.googleapis.com/onelife-public/blog.onelife.vn/2021/11/cach-lam-sinh-to-dua-chuoi-thom-thuc-uong-978240417190.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">CHUỐI - DỪA</h5><p class="text-xs text-on-surface-variant item-desc">Chuối - dừa béo thơm, mát lành</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'NƯỚC ÉP HƠN HỘT','Nước ép hơn hớt thanh mát, dễ uống','25.000 VNĐ','https://cdn.tgdd.vn/2020/08/CookProduct/13-1200x676.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">NƯỚC ÉP HỖN HỢP</h5><p class="text-xs text-on-surface-variant item-desc">Nước ép hơn hớt thanh mát, dễ uống</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'SINH TỐ THẬP CẨM','Sinh tố thập cẩm thơm ngon đặc biệt','25.000 VNĐ','https://file.hstatic.net/200000031322/file/sinh-to-trai-cay_d440931df83d415caf5057378d6afa8d_grande.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">SINH TỐ THẬP CẨM</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố thập cẩm thơm ngon đặc biệt</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'BƠ - DỪA GANG','Bơ - dừa gang béo thơm đậm vị','25.000 VNĐ','data:image/jpeg;base64,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')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">BƠ - DƯA GANG</h5><p class="text-xs text-on-surface-variant item-desc">Bơ - dừa gang béo thơm đậm vị</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'MÍT XOÀI','Mít xoài thơm ngọt, béo mịn','25.000 VNĐ','https://drinkocany.com/wp-content/uploads/2024/08/sinh-to-mit-3.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">MÍT XOÀI</h5><p class="text-xs text-on-surface-variant item-desc">Mít xoài thơm ngọt, béo mịn</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'MĂNG CẦU DỪA','Măng cầu dừa thơm béo, thanh mát','25.000 VNĐ','https://www.bartender.edu.vn/wp-content/uploads/2020/04/sinh-to-mang-cau.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">MĂNG CẦU DỪA</h5><p class="text-xs text-on-surface-variant item-desc">Măng cầu dừa thơm béo, thanh mát</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">25.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'BƠ SẦU RIÊNG','Bơ sầu riêng béo thơm, đậm vị','30.000 VNĐ','https://file.hstatic.net/200000700229/article/sinh-to-bo-sau-rieng_945d4cd1570448e897b1c999e8cf75ee.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">BƠ SẦU RIÊNG</h5><p class="text-xs text-on-surface-variant item-desc">Bơ sầu riêng béo thơm, đậm vị</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">30.000 VNĐ</span>
+                  </div>
+                  <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
+                      onclick="selectItem(this, 'HOA QUẢ DẦM','Hoa quả đậm vị thơm ngon, mát lạnh','30.000 VNĐ','https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/12/cach-lam-hoa-qua-dam-thumbnail.jpg')">
+                    <div class="flex items-center gap-4">
+                      <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                      <div><h5 class="font-bold text-base item-name">HOA QUẢ DẦM</h5><p class="text-xs text-on-surface-variant item-desc">Hoa quả đậm vị thơm ngon, mát lạnh</p></div>
+                    </div>
+                    <span class="font-bold text-sm item-price shrink-0">30.000 VNĐ</span>
+                  </div>
+                </div>
+    
+              </div><!-- end menu-scroll-area -->
+            </div><!-- end menu-list-wrapper -->
+  
+          </div>
+        </div>
+  
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+        BÁNH TACO
+    ════════════════════════════════════════ -->
+    <section id="tacos" class="py-32 bg-primary overflow-hidden relative">
+
+      <!-- Sọc chéo trang trí -->
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-black/10 -skew-x-12 translate-x-1/2 pointer-events-none"></div>
+
+      <div class="container mx-auto px-6 relative z-10">
+
+        <!-- Tiêu đề + nút điều hướng -->
+        <div class="mb-16 flex items-end justify-between">
+          <div>
+            <span class="text-white/60 font-bold uppercase tracking-[0.3em] text-sm mb-4 block">
+              Hương Vị Đường Phố
+            </span>
+            <h2 class="font-headline text-7xl italic text-white leading-none">
+              Dãy <span class="text-tertiary-fixed">Bánh Taco</span> Đường Phố
+            </h2>
+          </div>
+          <!-- Nút Trước / Tiếp -->
+          <div class="flex gap-3 shrink-0">
+            <button id="taco-prev"
+                    aria-label="Taco trước"
+                    class="w-12 h-12 rounded-full border-2 border-white/30 flex items-center justify-center
+                          text-white hover:bg-white/20 active:scale-95 transition-all">
+              <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <button id="taco-next"
+                    aria-label="Taco tiếp theo"
+                    class="w-12 h-12 rounded-full border-2 border-white/30 flex items-center justify-center
+                          text-white hover:bg-white/20 active:scale-95 transition-all">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Thanh cuộn ngang -->
+        <div id="taco-track" class="flex gap-8 overflow-x-auto no-scrollbar pb-12 snap-x snap-mandatory scroll-smooth">
+          <!-- #01 Trứng + Xúc Xích -->
+          <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
+            <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/491927492_2095271377620038_824391514049431264_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=b8oL2tGOTs0Q7kNvwGKBKKG&_nc_oc=AdqQtV5gow40e9DLCDn7xhGjS3w3yBiNQgBrwmZH1q5od3QuFRysaqNe4IitJMYBRjxhqdvwKyi3fVITn8SXlswK&_nc_zt=23&_nc_ht=scontent.fsgn5-15.fna&_nc_gid=yCwatxlMfHCEz3OZS9EqqQ&_nc_ss=7a30f&oh=00_AfwhshaWNMKoFgMq89FytpU56su0soMZP4JMDT8GBxJjxA&oe=69C84FF3"
+                alt="Taco trứng và xúc xích"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute top-6 left-6 bg-primary-container text-white
+                          px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                Bán Chạy
+              </div>
+              <div class="absolute bottom-6 left-6">
+                <h4 class="text-3xl font-bold text-white mb-2">TRỨNG + XÚC XÍCH</h4>
+                <p class="text-white/70 italic">Trứng mềm, xúc xích đậm vị</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center px-4">
+              <span class="text-4xl font-black text-white italic opacity-40">#01</span>
+              <span class="text-2xl font-bold text-tertiary-fixed">25K</span>
+            </div>
+          </div>
+
+          <!-- #02 Bò Băm Bơ Tỏi -->
+          <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
+            <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/488618176_1052190273611161_6653528804567197395_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=MXITskd4ZesQ7kNvwG2knqE&_nc_oc=AdqsdZnE6-bppa_-mSai3OPU-HK_v3un94_uwBgLVM7LVJRxqQSLOmauKO2fxbcXSLqCaOi_SmFlUYThKCdmQZ4S&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=6L8P6sisG85x62laEjLLlg&_nc_ss=7a30f&oh=00_AfxwzBtF4annByEeaj2meCF9MPbpaCTZZifAx0s0EAv1ww&oe=69C82AA7"
+                alt="Taco bò băm bơ tỏi"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6">
+                <h4 class="text-3xl font-bold text-white mb-2">BÒ BĂM BƠ TỎI</h4>
+                <p class="text-white/70 italic">Bò băm thơm béo bơ tỏi</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center px-4">
+              <span class="text-4xl font-black text-white italic opacity-40">#02</span>
+              <span class="text-2xl font-bold text-tertiary-fixed">25K</span>
+            </div>
+          </div>
+
+          <!-- #03 Gà Chiên Giòn Bơ Cay -->
+          <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
+            <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="https://khietminhbakery.com/wp-content/uploads/2025/09/cong-thuc-lam-banh-tacos-phap-ngon.jpg"
+                alt="Taco gà chiên giòn bơ cay"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6">
+                <h4 class="text-3xl font-bold text-white mb-2">GÀ CHIÊN GIÒN BƠ CAY</h4>
+                <p class="text-white/70 italic">Gà giòn rụm, sốt bơ cay</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center px-4">
+              <span class="text-4xl font-black text-white italic opacity-40">#03</span>
+              <span class="text-2xl font-bold text-tertiary-fixed">25K</span>
+            </div>
+          </div>
+
+          <!-- #04 Trứng + Xúc Xích + Phô Mai -->
+          <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
+            <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/490270023_2002220270303075_4394966500128998028_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=zWoJyQQBwGoQ7kNvwEVLpWr&_nc_oc=Adq9ceRvbkyNhJnnjTHwtJoefB75kG8odwzkzm4RZ-2ZJYpFiHYt9e-4OK6q_ZR2zmL66pGcMYT0af_iDQ49v9Ce&_nc_zt=23&_nc_ht=scontent.fsgn5-15.fna&_nc_gid=j0b_cemLi-deV3--eSdM1w&_nc_ss=7a30f&oh=00_AfyAZxcbcQza4XoOaKT1_JxrFQhsxgdmNhhTk4HOEANIAQ&oe=69C8317A"
+                alt="Taco trứng xúc xích phô mai"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6">
+                <h4 class="text-3xl font-bold text-white mb-2">TRỨNG + XÚC XÍCH + PHÔ MAI</h4>
+                <p class="text-white/70 italic">Thêm phô mai béo ngậy hấp dẫn</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center px-4">
+              <span class="text-4xl font-black text-white italic opacity-40">#04</span>
+              <span class="text-2xl font-bold text-tertiary-fixed">30K</span>
+            </div>
+          </div>
+
+          <!-- #05 Bò Băm + Phô Mai -->
+          <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
+            <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/558763549_1794716861407667_43807818672528413_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=TRSnNWawOrQQ7kNvwErYHNG&_nc_oc=Adr1ScC9y8FQo7x6TXoHNkEuX-P1c2OFt7AoS4-Q2WsEhtS2XGZPV0_CP6lkFrDrCFHPUpO4HmLy1aLuSqUjsdjB&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=GmjfLSPR_dTab9hb89dEHQ&_nc_ss=7a30f&oh=00_AfwbnrLqBKl7PT6gfHGSMLmnb3ny5Iha4OWPQgwp36SorA&oe=69C83DA2"
+                alt="Taco bò băm phô mai"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6">
+                <h4 class="text-3xl font-bold text-white mb-2">BÒ BĂM + PHÔ MAI</h4>
+                <p class="text-white/70 italic">Bò băm kết hợp phô mai tan</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center px-4">
+              <span class="text-4xl font-black text-white italic opacity-40">#05</span>
+              <span class="text-2xl font-bold text-tertiary-fixed">30K</span>
+            </div>
+          </div>
+
+          <!-- #06 Gà Chiên Giòn + Phô Mai -->
+          <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
+            <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/517762195_2474368462918834_1898354087290483052_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=zaqS8OMWBvMQ7kNvwGJIyvk&_nc_oc=Adq-5N4EojV3B8cMBtQ1lJHIVD9ICiws512j-BiKWVMdQbk6B50tGRQUVehRldwUCEL8fM2tu7dDNiaKne5VTgp9&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=CPxMb9j0BoqTmCE9lf1VgA&_nc_ss=7a30f&oh=00_AfzsR5ipP6tr3MGul5fwfygMV3XvQiN15y1L7xqVRzmGUQ&oe=69C8435C"
+                alt="Taco gà chiên giòn phô mai"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6">
+                <h4 class="text-3xl font-bold text-white mb-2">GÀ CHIÊN GIÒN + PHÔ MAI</h4>
+                <p class="text-white/70 italic">Gà giòn thêm lớp phô mai</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center px-4">
+              <span class="text-4xl font-black text-white italic opacity-40">#06</span>
+              <span class="text-2xl font-bold text-tertiary-fixed">30K</span>
+            </div>
+          </div>
+
+          <!-- #07 Đặc Biệt -->
+          <div class="min-w-[400px] snap-start group cursor-pointer shrink-0">
+            <div class="relative h-[500px] rounded-3xl overflow-hidden mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="https://cooponline.vn/tin-tuc/wp-content/uploads/2025/11/banh-tacos-phap-mon-an-gay-sot-sai-gon-co-gi-dac-biet-3.png"
+                alt="Taco đặc biệt của quán"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6">
+                <h4 class="text-3xl font-bold text-white mb-2">ĐẶC BIỆT</h4>
+                <p class="text-white/70 italic">Phiên bản đặc biệt đậm vị nhất</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center px-4">
+              <span class="text-4xl font-black text-white italic opacity-40">#07</span>
+              <span class="text-2xl font-bold text-tertiary-fixed">45K</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Chấm chỉ báo -->
+        <div id="taco-dots" class="flex gap-2 justify-center mt-2">
+          <button class="taco-dot w-8 h-2 rounded-full bg-white transition-all" data-index="0" aria-label="Slide 1"></button>
+          <button class="taco-dot w-2 h-2 rounded-full bg-white/30 transition-all" data-index="1" aria-label="Slide 2"></button>
+          <button class="taco-dot w-2 h-2 rounded-full bg-white/30 transition-all" data-index="2" aria-label="Slide 3"></button>
+          <button class="taco-dot w-2 h-2 rounded-full bg-white/30 transition-all" data-index="3" aria-label="Slide 4"></button>
+          <button class="taco-dot w-2 h-2 rounded-full bg-white/30 transition-all" data-index="4" aria-label="Slide 5"></button>
+          <button class="taco-dot w-2 h-2 rounded-full bg-white/30 transition-all" data-index="5" aria-label="Slide 6"></button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+        TẠI SAO CHỌN CHÚNG TÔI
+    ════════════════════════════════════════ -->
+    <section class="py-24 bg-surface-container-highest">
+      <div class="container mx-auto px-6 text-center">
+
+        <h2 class="font-headline text-5xl mb-16 italic">Tiêu Chuẩn Tươi Ngon</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+
+          <div class="space-y-4">
+            <div class="mx-auto w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
+              <span class="material-symbols-outlined text-4xl text-secondary">nutrition</span>
+            </div>
+            <h5 class="font-bold text-lg uppercase tracking-widest text-on-surface">Tươi Mỗi Ngày</h5>
+          </div>
+
+          <div class="space-y-4">
+            <div class="mx-auto w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
+              <span class="material-symbols-outlined text-4xl text-primary">payments</span>
+            </div>
+            <h5 class="font-bold text-lg uppercase tracking-widest text-on-surface">Giá Phải Chăng</h5>
+          </div>
+
+          <div class="space-y-4">
+            <div class="mx-auto w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
+              <span class="material-symbols-outlined text-4xl text-tertiary">speed</span>
+            </div>
+            <h5 class="font-bold text-lg uppercase tracking-widest text-on-surface">Giao Hàng Nhanh</h5>
+          </div>
+
+          <div class="space-y-4">
+            <div class="mx-auto w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
+              <span class="material-symbols-outlined text-4xl text-on-secondary-container">nature_people</span>
+            </div>
+            <h5 class="font-bold text-lg uppercase tracking-widest text-on-surface">100% Tự Nhiên</h5>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+        GALLERY BENTO
+    ════════════════════════════════════════ -->
+    <section class="py-24 bg-surface">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+
+          <!-- Lớn: col-span-2 row-span-2 -->
+          <div class="col-span-2 row-span-2 relative rounded-3xl overflow-hidden group">
+            <img
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPqzfwXdIcAbgFTFHRzTmx_G3mFIhOVvR64d9LwJwHfZPN5sceyC-5YIglExCFMIRnyedxLUB2HaFcOi4SkmVh42y_cENZQbltaZ4rde9TDAcv47Hh5SxvQKze-YBTLxlCamqjo1co3DNEN3I27wwlueQg0kyjhsq21mk6-1I4Bi5thjaMgj6rSPpDKt_GV86aeTcc3L_KU9sj35JR3sV8lVzH2IT2LpAw-YwxjbGQ3XfkrFS7AZvWFqqFWU9rb4kOhxlJ37ypT4Y"
+              alt="Góc nhìn từ trên xuống của tô sinh tố nhiều màu với granola và trái cây thái lát"
+            />
+          </div>
+
+          <!-- Góc trên bên phải -->
+          <div class="col-span-1 row-span-1 relative rounded-3xl overflow-hidden group">
+            <img
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjHEnPu_4ODb0r9mqDE5nl3Yg9HcXMGYTfnyK7Q8bMdNEE0NfHtHqcQeFpBCX_oNIDpfDtzNDc9HlQktPZVsU0ilbH4xPuO2xrqGJlu7ImaC2ZrLegnkVDeXapJc0-3wW6jdQd2UEJ1a_Jv3hu2CVjYzi-yJ9OUx9ukKJPxUHUDCjl-C7is2OKzpWYjlUgTPgUrNnBxflEEnfjPoaMCSEPNm5zfwDggw7lwvqjCMqHor-t1rnNzebZDLCJzGzOe-d9t8C3ht5NJf0"
+              alt="Salad tươi với gà nướng và lát bơ"
+            />
+          </div>
+
+          <!-- Cực phải: row-span-2 -->
+          <div class="col-span-1 row-span-2 relative rounded-3xl overflow-hidden group">
+            <img
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzrx_C2WvMWBmSowFwApxYdHPg7IjWXM9gYA0xuEpQRBS8h58DMgQesmpcuO3ugDLPhG_BlnvNgoGejugCJy46bav3ZCQ1JbZWlchzeg0iygG4y_wgsg7VIc34xIpnaClO_GJ2HZzsmM9u4U42u7hLhhmBemxIaXjekHmr6rZNmsMn-BgTb4HkKNTsmCkM3mnhid5W__Ej_cFUjujFc-gegHaIIXBsKp9WcvFNfmjQ3hLVomTfLAAbH_WmO4DNnqEyxdMz1Hx8Xx8"
+              alt="Tô rau củ nhiều màu sắc với nguyên liệu tự nhiên"
+            />
+          </div>
+
+          <!-- Góc dưới bên phải -->
+          <div class="col-span-1 row-span-1 relative rounded-3xl overflow-hidden group">
+            <img
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo1LTjnG6Wj2bnz5AQqWGyyI13TcGdF0mkKgEkaPP9CXumIaLZ22Z7K5Q6XjtKCSHSxpy3G0jBYVy-TcjFIRQ9Xmmcw-Lxclq17vFc0oM8jFx3EKmqCOp1zgi0_fzTEEKOiVKTW6EiWtrRMP-6CWnRS6nU0hSxG8yMUr5QJymFxJyNrkH0sXAVdplFNSEN9ZkWeMusAonjSfdrhz8VsvbvQVyL1pmQF_lGQo_DeeJjKLU2LqSmEvziBVu2OCoBoyBEhuIse_pRGsg"
+              alt="Trưng bày thẩm mỹ của trái cây họ cam quýt và thảo mộc tươi"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+        LỐI SỐNG / CÂU CHUYỆN
+    ════════════════════════════════════════ -->
+    <section id="story" class="py-24 bg-secondary-container">
+      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+        <!-- Hình ảnh -->
+        <div class="order-2 md:order-1">
+          <img
+            class="rounded-[3rem] shadow-2xl w-full"
+            src="https://hoaquafuji.com/storage/app/media/uploaded-files/sinh-to-trai-cay-4-min.jpg"
+            alt="Người mặc trang phục thể thao cầm ly nước xanh tươi, cười trong công viên đô thị nắng"
+          />
+        </div>
+
+        <!-- Nội dung -->
+        <div class="order-1 md:order-2 space-y-8">
+          <h2 class="font-headline text-6xl italic leading-tight">
+            Sống Cùng
+            <span class="text-on-secondary-container underline underline-offset-8 decoration-secondary">
+              Thói Quen Tươi Xanh
+            </span>
+          </h2>
+
+          <p class="text-xl text-on-secondary-container/80 leading-relaxed font-light">
+            Tại Sinh Tố Bin, chúng tôi tin rằng sức khỏe không phải là gánh nặng — đó là hương vị. Những hỗn hợp thảo mộc của chúng tôi được pha chế để tiếp thêm năng lượng cho bạn trong khi thỏa mãn tâm hồn. Dù là sinh tố buổi sáng hay bánh taco đêm khuya, chúng tôi mang đến sự cân bằng mà bạn cần.
+          </p>
+
+          <div class="flex items-center gap-6">
+            <div class="text-center">
+              <span class="block text-4xl font-headline italic">10k+</span>
+              <span class="text-sm uppercase tracking-widest opacity-60">Khách Hàng Hài Lòng</span>
+            </div>
+            <div class="w-px h-12 bg-on-secondary-container/20"></div>
+            <div class="text-center">
+              <span class="block text-4xl font-headline italic">Quận Tân Bình</span>
+              <span class="text-sm uppercase tracking-widest opacity-60">Niềm Tự Hào Địa Phương</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+        KÊU GỌI HÀNH ĐỘNG CUỐI
+    ════════════════════════════════════════ -->
+    <section class="py-12 px-4 md:py-20 md:px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="bg-gradient-to-br from-tertiary-fixed via-tertiary-fixed-dim to-secondary-container/80
+                    rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl relative">
+          <div class="absolute -top-20 -right-20 w-60 h-60 bg-white/20 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="relative z-10 grid grid-cols-1 md:grid-cols-2">
+            <div class="p-6 md:p-10 lg:p-12 flex flex-col justify-center gap-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/35 w-fit">
+                <span class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      style="font-variation-settings:'FILL' 1;">local_fire_department</span>
+                <span class="text-xs font-bold text-on-tertiary-fixed uppercase tracking-[0.18em]">Đặt Ngay Trong 1 Chạm</span>
+              </div>
+
+              <h2 class="font-headline text-3xl md:text-5xl italic leading-tight text-on-surface">
+                Sẵn sàng thưởng thức điều gì đó tươi ngon?
+              </h2>
+
+              <div class="space-y-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-white/40 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-base text-on-surface">call</span>
+                  </div>
+                  <p class="text-sm md:text-base font-medium text-on-surface/85">Hotline: <strong>0933611538</strong></p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-white/40 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-base text-on-surface">location_on</span>
+                  </div>
+                  <p class="text-sm md:text-base font-medium text-on-surface/85">Address: <strong>121A Phạm Phú Thứ, Phường 11, Tân Bình</strong></p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-white/40 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-base text-on-surface">schedule</span>
+                  </div>
+                  <p class="text-sm md:text-base font-medium text-on-surface/85">Hours: <strong>8:00 AM - 10:00 PM</strong></p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-white/40 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-base text-on-surface">electric_moped</span>
+                  </div>
+                  <p class="text-sm md:text-base font-medium text-on-surface/85">Delivery: <strong>Tân Bình District</strong></p>
+                </div>
+              </div>
+
+              <div class="flex flex-col sm:flex-row gap-3 pt-1">
+                <a href="tel:0933611538"
+                  class="group flex-1 inline-flex items-center justify-center gap-2
+                          bg-on-surface text-surface px-6 py-4 rounded-2xl
+                          font-black text-base md:text-lg shadow-xl
+                          hover:-translate-y-0.5 hover:scale-[1.01] active:scale-95 transition-all">
+                  <span class="material-symbols-outlined text-xl group-hover:animate-pulse">call</span>
+                  Gọi Ngay 0933611538
+                </a>
+                <a href="https://maps.app.goo.gl/6nc5CHjFUKYc36t77"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center gap-2
+                          px-6 py-4 rounded-2xl font-semibold text-on-surface
+                          border-2 border-on-surface/20 bg-white/40
+                          hover:bg-white/60 hover:-translate-y-0.5 active:scale-95 transition-all">
+                  <span class="material-symbols-outlined text-xl">map</span>
+                  Mở Bản Đồ
+                </a>
+              </div>
+            </div>
+
+            <div class="p-6 md:p-8 lg:p-10">
+              <div class="h-full min-h-[320px] md:min-h-[380px] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-white/40 bg-white/40 backdrop-blur-sm">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.279094686978!2d106.64367757451738!3d10.789923158945719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eb37afe50e7%3A0x17a82a1a2a18065d!2zMTIxYSBQaOG6oW0gUGjDuiBUaOG7qSwgUGjGsOG7nW5nIDExLCBUw6JuIELDrG5oLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1774344841797!5m2!1svi!2s"
+                  class="w-full h-full border-0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-    </div>
-  </section>
+    </section>
 
 
-  <!-- ════════════════════════════════════════
-       KÊU GỌI HÀNH ĐỘNG CUỐI
-  ════════════════════════════════════════ -->
-  <section class="py-12 px-4 md:py-20 md:px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="bg-gradient-to-br from-tertiary-fixed via-tertiary-fixed-dim to-secondary-container/80
-                  rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl relative">
-        <div class="absolute -top-20 -right-20 w-60 h-60 bg-white/20 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+    <!-- ════════════════════════════════════════
+        CHÂN TRANG
+    ════════════════════════════════════════ -->
+    <footer class="w-full border-t border-white/40 bg-gradient-to-b from-stone-100 to-stone-50">
+      <div class="max-w-screen-2xl mx-auto px-6 md:px-8 py-10 md:py-12">
+        <div class="rounded-3xl border border-stone-200/80 bg-white/70 backdrop-blur-sm shadow-xl p-8 md:p-10">
+          <div class="h-px w-full bg-gradient-to-r from-transparent via-stone-300 to-transparent mb-8"></div>
 
-        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2">
-          <div class="p-6 md:p-10 lg:p-12 flex flex-col justify-center gap-6">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/35 w-fit">
-              <span class="material-symbols-outlined text-sm text-on-tertiary-fixed"
-                    style="font-variation-settings:'FILL' 1;">local_fire_department</span>
-              <span class="text-xs font-bold text-on-tertiary-fixed uppercase tracking-[0.18em]">Đặt Ngay Trong 1 Chạm</span>
-            </div>
-
-            <h2 class="font-headline text-3xl md:text-5xl italic leading-tight text-on-surface">
-              Sẵn sàng thưởng thức điều gì đó tươi ngon?
-            </h2>
-
-            <div class="space-y-3">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+            <!-- Brand -->
+            <div class="flex flex-col items-center md:items-start gap-4 text-center md:text-left">
+              <span class="text-3xl font-headline italic text-stone-900">Sinh Tố Bin</span>
+              <p class="text-sm text-stone-600 leading-relaxed max-w-sm">
+                Ẩm thực đường phố thảo mộc hiện đại - tươi, nhanh và đầy năng lượng cho mỗi ngày.
+              </p>
               <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-full bg-white/40 flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-base text-on-surface">call</span>
-                </div>
-                <p class="text-sm md:text-base font-medium text-on-surface/85">Hotline: <strong>+84 0797467390</strong></p>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-full bg-white/40 flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-base text-on-surface">location_on</span>
-                </div>
-                <p class="text-sm md:text-base font-medium text-on-surface/85">Address: <strong>121A Phạm Phú Thứ, Phường 11, Tân Bình</strong></p>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-full bg-white/40 flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-base text-on-surface">schedule</span>
-                </div>
-                <p class="text-sm md:text-base font-medium text-on-surface/85">Hours: <strong>8:00 AM - 10:00 PM</strong></p>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-full bg-white/40 flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-base text-on-surface">electric_moped</span>
-                </div>
-                <p class="text-sm md:text-base font-medium text-on-surface/85">Delivery: <strong>Tân Bình District</strong></p>
+                <a href="#" aria-label="Instagram"
+                  class="w-10 h-10 rounded-full border border-stone-300 text-stone-500 flex items-center justify-center hover:text-primary hover:border-primary hover:scale-105 transition-all">
+                  <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+                </a>
+                <a href="#" aria-label="Facebook"
+                  class="w-10 h-10 rounded-full border border-stone-300 text-stone-500 flex items-center justify-center hover:text-primary hover:border-primary hover:scale-105 transition-all">
+                  <span class="material-symbols-outlined text-[18px]">thumb_up</span>
+                </a>
+                <a href="#" aria-label="TikTok"
+                  class="w-10 h-10 rounded-full border border-stone-300 text-stone-500 flex items-center justify-center hover:text-primary hover:border-primary hover:scale-105 transition-all">
+                  <span class="material-symbols-outlined text-[18px]">music_note</span>
+                </a>
               </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-3 pt-1">
-              <a href="tel:+84797467390"
-                 class="group flex-1 inline-flex items-center justify-center gap-2
-                        bg-on-surface text-surface px-6 py-4 rounded-2xl
-                        font-black text-base md:text-lg shadow-xl
-                        hover:-translate-y-0.5 hover:scale-[1.01] active:scale-95 transition-all">
-                <span class="material-symbols-outlined text-xl group-hover:animate-pulse">call</span>
-                Call Now - +84 0797467390
+            <!-- Contact -->
+            <div class="flex flex-col items-center md:items-start gap-3">
+              <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-stone-500">Liên hệ</h4>
+              <a href="tel:0933611538"
+                class="group inline-flex items-center gap-2 text-stone-700 hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-[18px] opacity-70 group-hover:opacity-100">call</span>
+                <span class="text-sm underline-offset-4 group-hover:underline">0933611538</span>
               </a>
               <a href="https://maps.app.goo.gl/6nc5CHjFUKYc36t77"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 class="inline-flex items-center justify-center gap-2
-                        px-6 py-4 rounded-2xl font-semibold text-on-surface
-                        border-2 border-on-surface/20 bg-white/40
-                        hover:bg-white/60 hover:-translate-y-0.5 active:scale-95 transition-all">
-                <span class="material-symbols-outlined text-xl">map</span>
-                Open in Google Maps
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group inline-flex items-start gap-2 text-stone-700 hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-[18px] mt-0.5 opacity-70 group-hover:opacity-100">location_on</span>
+                <span class="text-sm leading-relaxed underline-offset-4 group-hover:underline">121A phạm phú thứ phường 11 tân bình</span>
+              </a>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex flex-col items-center md:items-end gap-3">
+              <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-stone-500">Điều hướng</h4>
+              <a href="#"
+                class="text-sm text-stone-700 hover:text-stone-900 transition-colors underline-offset-4 hover:underline">
+                Bảo Mật
+              </a>
+              <a href="#"
+                class="text-sm text-stone-700 hover:text-stone-900 transition-colors underline-offset-4 hover:underline">
+                Điều Khoản
+              </a>
+              <a href="#"
+                class="text-sm text-stone-700 hover:text-stone-900 transition-colors underline-offset-4 hover:underline">
+                Địa Điểm
               </a>
             </div>
           </div>
 
-          <div class="p-6 md:p-8 lg:p-10">
-            <div class="h-full min-h-[320px] md:min-h-[380px] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-white/40 bg-white/40 backdrop-blur-sm">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.279094686978!2d106.64367757451738!3d10.789923158945719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eb37afe50e7%3A0x17a82a1a2a18065d!2zMTIxYSBQaOG6oW0gUGjDuiBUaOG7qSwgUGjGsOG7nW5nIDExLCBUw6JuIELDrG5oLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1774344841797!5m2!1svi!2s"
-                class="w-full h-full border-0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ════════════════════════════════════════
-       CHÂN TRANG
-  ════════════════════════════════════════ -->
-  <footer class="w-full border-t border-white/40 bg-gradient-to-b from-stone-100 to-stone-50">
-    <div class="max-w-screen-2xl mx-auto px-6 md:px-8 py-10 md:py-12">
-      <div class="rounded-3xl border border-stone-200/80 bg-white/70 backdrop-blur-sm shadow-xl p-8 md:p-10">
-        <div class="h-px w-full bg-gradient-to-r from-transparent via-stone-300 to-transparent mb-8"></div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-          <!-- Brand -->
-          <div class="flex flex-col items-center md:items-start gap-4 text-center md:text-left">
-            <span class="text-3xl font-headline italic text-stone-900">Fresh Tươi</span>
-            <p class="text-sm text-stone-600 leading-relaxed max-w-sm">
-              Ẩm thực đường phố thảo mộc hiện đại - tươi, nhanh và đầy năng lượng cho mỗi ngày.
+          <div class="mt-8 pt-6 border-t border-stone-200/80 text-center">
+            <p class="text-xs uppercase tracking-[0.18em] text-stone-500">
+              Copyright © 2026 BBOTECH. All Rights Reserved.
             </p>
-            <div class="flex items-center gap-3">
-              <a href="#" aria-label="Instagram"
-                 class="w-10 h-10 rounded-full border border-stone-300 text-stone-500 flex items-center justify-center hover:text-primary hover:border-primary hover:scale-105 transition-all">
-                <span class="material-symbols-outlined text-[18px]">photo_camera</span>
-              </a>
-              <a href="#" aria-label="Facebook"
-                 class="w-10 h-10 rounded-full border border-stone-300 text-stone-500 flex items-center justify-center hover:text-primary hover:border-primary hover:scale-105 transition-all">
-                <span class="material-symbols-outlined text-[18px]">thumb_up</span>
-              </a>
-              <a href="#" aria-label="TikTok"
-                 class="w-10 h-10 rounded-full border border-stone-300 text-stone-500 flex items-center justify-center hover:text-primary hover:border-primary hover:scale-105 transition-all">
-                <span class="material-symbols-outlined text-[18px]">music_note</span>
-              </a>
-            </div>
           </div>
-
-          <!-- Contact -->
-          <div class="flex flex-col items-center md:items-start gap-3">
-            <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-stone-500">Liên hệ</h4>
-            <a href="mailto:contact@bbotech.vn"
-               class="group inline-flex items-center gap-2 text-stone-800 hover:text-primary transition-colors">
-              <span class="material-symbols-outlined text-[18px] opacity-70 group-hover:opacity-100">mail</span>
-              <span class="font-semibold underline-offset-4 group-hover:underline">contact@bbotech.vn</span>
-            </a>
-            <a href="tel:+84797467390"
-               class="group inline-flex items-center gap-2 text-stone-700 hover:text-primary transition-colors">
-              <span class="material-symbols-outlined text-[18px] opacity-70 group-hover:opacity-100">call</span>
-              <span class="text-sm underline-offset-4 group-hover:underline">+84 0797467390</span>
-            </a>
-            <a href="https://maps.app.goo.gl/6nc5CHjFUKYc36t77"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="group inline-flex items-start gap-2 text-stone-700 hover:text-primary transition-colors">
-              <span class="material-symbols-outlined text-[18px] mt-0.5 opacity-70 group-hover:opacity-100">location_on</span>
-              <span class="text-sm leading-relaxed underline-offset-4 group-hover:underline">121A phạm phú thứ phường 11 tân bình</span>
-            </a>
-          </div>
-
-          <!-- Navigation -->
-          <div class="flex flex-col items-center md:items-end gap-3">
-            <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-stone-500">Điều hướng</h4>
-            <a href="#"
-               class="text-sm text-stone-700 hover:text-stone-900 transition-colors underline-offset-4 hover:underline">
-              Bảo Mật
-            </a>
-            <a href="#"
-               class="text-sm text-stone-700 hover:text-stone-900 transition-colors underline-offset-4 hover:underline">
-              Điều Khoản
-            </a>
-            <a href="#"
-               class="text-sm text-stone-700 hover:text-stone-900 transition-colors underline-offset-4 hover:underline">
-              Địa Điểm
-            </a>
-          </div>
-        </div>
-
-        <div class="mt-8 pt-6 border-t border-stone-200/80 text-center">
-          <p class="text-xs uppercase tracking-[0.18em] text-stone-500">
-            © 2024 Fresh Tươi. Ẩm Thực Đường Phố Thảo Mộc.
-          </p>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 
-  <!-- ════════════════════════════════════════
-       JAVASCRIPT: Chuyển tab + Slider taco
-  ════════════════════════════════════════ -->
-  <script>
-    /* ── Chuyển tab thực đơn ─────────────────────── */
-    function switchTab(name) {
-      document.querySelectorAll('.menu-panel').forEach(el => el.classList.add('hidden'));
-      document.getElementById('panel-' + name).classList.remove('hidden');
+    <!-- ════════════════════════════════════════
+        JAVASCRIPT: Chuyển tab + Slider taco
+    ════════════════════════════════════════ -->
+    <script>
+      /* ── Chuyển tab thực đơn ─────────────────────── */
+      function switchTab(name) {
+        document.querySelectorAll('.menu-panel').forEach(el => el.classList.add('hidden'));
+        document.getElementById('panel-' + name).classList.remove('hidden');
 
-      document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('bg-secondary', 'text-on-secondary', 'font-bold', 'shadow-md');
-        btn.classList.add('font-medium');
-      });
-      const active = document.getElementById('tab-' + name);
-      active.classList.add('bg-secondary', 'text-on-secondary', 'font-bold', 'shadow-md');
-      active.classList.remove('font-medium');
-
-      // Chọn tự động món đầu tiên của tab mới
-      const firstItem = document.querySelector('#panel-' + name + ' .menu-item');
-      if (firstItem) firstItem.click();
-    }
-
-    /* ── Chọn món & cập nhật preview ─────────────── */
-    function selectItem(el, name, desc, price, img) {
-      // Xóa active của tất cả items trong panel hiện tại
-      const panel = el.closest('.menu-panel');
-      panel.querySelectorAll('.menu-item').forEach(item => item.classList.remove('is-active'));
-      el.classList.add('is-active');
-
-      // Cập nhật preview với hiệu ứng fade
-      const imgEl    = document.getElementById('preview-img');
-      const nameEl   = document.getElementById('preview-name');
-      const descEl   = document.getElementById('preview-desc');
-      const priceEl  = document.getElementById('preview-price');
-
-      imgEl.classList.add('fading');
-      setTimeout(() => {
-        imgEl.src = img;
-        nameEl.textContent  = name;
-        descEl.textContent  = desc;
-        priceEl.textContent = price;
-        imgEl.classList.remove('fading');
-      }, 220);
-    }
-
-    // Chọn món đầu tiên khi tải trang
-    document.addEventListener('DOMContentLoaded', () => {
-      const first = document.querySelector('#panel-smoothies .menu-item');
-      if (first) first.click();
-    });
-
-    /* ── Slider taco ───────────────────────────── */
-    (function () {
-      const track  = document.getElementById('taco-track');
-      const dots   = document.querySelectorAll('.taco-dot');
-      const CARD_W = 400 + 32;
-      let current  = 0;
-      const total  = dots.length;
-
-      function goTo(index) {
-        current = Math.max(0, Math.min(index, total - 1));
-        track.scrollTo({ left: current * CARD_W, behavior: 'smooth' });
-        updateDots();
-      }
-
-      function updateDots() {
-        dots.forEach((dot, i) => {
-          if (i === current) {
-            dot.classList.remove('w-2', 'bg-white/30');
-            dot.classList.add('w-8', 'bg-white');
-          } else {
-            dot.classList.remove('w-8', 'bg-white');
-            dot.classList.add('w-2', 'bg-white/30');
-          }
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.classList.remove('bg-secondary', 'text-on-secondary', 'font-bold', 'shadow-md');
+          btn.classList.add('font-medium');
         });
+        const active = document.getElementById('tab-' + name);
+        active.classList.add('bg-secondary', 'text-on-secondary', 'font-bold', 'shadow-md');
+        active.classList.remove('font-medium');
+
+        // Chọn tự động món đầu tiên của tab mới
+        const firstItem = document.querySelector('#panel-' + name + ' .menu-item');
+        if (firstItem) firstItem.click();
       }
 
-      document.getElementById('taco-prev').addEventListener('click', () => goTo(current - 1));
-      document.getElementById('taco-next').addEventListener('click', () => goTo(current + 1));
+      /* ── Chọn món & cập nhật preview ─────────────── */
+      function selectItem(el, name, desc, price, img) {
+        // Xóa active của tất cả items trong panel hiện tại
+        const panel = el.closest('.menu-panel');
+        panel.querySelectorAll('.menu-item').forEach(item => item.classList.remove('is-active'));
+        el.classList.add('is-active');
 
-      dots.forEach(dot => {
-        dot.addEventListener('click', () => goTo(Number(dot.dataset.index)));
+        // Cập nhật preview với hiệu ứng fade
+        const imgEl    = document.getElementById('preview-img');
+        const nameEl   = document.getElementById('preview-name');
+        const descEl   = document.getElementById('preview-desc');
+        const priceEl  = document.getElementById('preview-price');
+
+        imgEl.classList.add('fading');
+        setTimeout(() => {
+          imgEl.src = img;
+          nameEl.textContent  = name;
+          descEl.textContent  = desc;
+          priceEl.textContent = price;
+          imgEl.classList.remove('fading');
+        }, 220);
+      }
+
+      /* ══════════════════════════════════════════════════════════════
+        🍹 CẤU HÌNH ẢNH SINH TỐ — CHỈ CẦN SỬA TẠI ĐÂY!
+        Thay URL bên phải dấu : bằng link ảnh mới của bạn.
+        Ảnh nên có tỉ lệ dọc (4:5) để hiển thị đẹp nhất.
+      ══════════════════════════════════════════════════════════════ */
+      const SMOOTHIE_IMAGES = {
+        'CHUOI':     'https://i.pinimg.com/736x/e0/ad/ee/e0adeeddf0de470986d71925ad24e571.jpg',
+        'DU_DU':     'https://i.pinimg.com/736x/64/2e/65/642e65e63927a9fd4dec5bbd79894d9e.jpg',
+        'MIT':       'https://i.pinimg.com/736x/27/ed/99/27ed99e6e2249560fefe0483c3a6d321.jpg',
+        'XOAI':      'https://i.pinimg.com/736x/a9/f4/ce/a9f4cec6e92fa1c23ec63554c1df3cda.jpg',
+        'MANG_CAU':  'https://i.pinimg.com/1200x/9c/c3/d7/9cc3d780016a2132e969613a724dfc4d.jpg',
+        'DAU':       'https://i.pinimg.com/1200x/4a/50/88/4a5088c4b31bb5795b84797cd97fb5f2.jpg',
+        'SAU_RIENG': 'https://i.pinimg.com/1200x/7e/89/ee/7e89ee4fab7e3c3330eafcc0d5fd3c6c.jpg',
+        'DUA_LUOI':  'https://i.pinimg.com/736x/88/da/14/88da14c11483427bdb01b99d232adc75.jpg',
+        'DAU_XANH':  'https://i.pinimg.com/736x/c6/e4/15/c6e415075335a6eaeb0c9c5c98e2eb40.jpg',
+        'DUA_GANG':  'https://i.pinimg.com/1200x/51/d6/d3/51d6d3693201e915c89f55023c29854f.jpg',
+        'DUA':       'https://i.pinimg.com/736x/98/17/4b/98174b9bb5b6dce2593d4e14f631e4a5.jpg',
+        'SAPOCHE':   'https://cdn.tgdd.vn/Files/2019/04/01/1158144/lam-sinh-to-sa-po-che-don-gian-tai-nha-202109291205020460.jpg',
+        'BO':        'https://i.pinimg.com/736x/18/dd/9b/18dd9ba775636c93e7c36bf678da0646.jpg',
+        'HAT_SEN':   'https://cdn.tgdd.vn/Files/2018/12/20/1139342/5-cach-nau-sua-sen-ngon-me-ly-don-gian-tai-nha-4.jpg',
+      };
+      /* ══════════════════════════════════════════════════════════════ */
+  
+      /* ── Hàm chọn món Sinh Tố (dùng ảnh từ config bên trên) ──── */
+      function selectSmoothie(el, name, desc, price, key) {
+        const img = SMOOTHIE_IMAGES[key] || '';
+        selectItem(el, name, desc, price, img);
+      }
+
+      // Chọn món đầu tiên khi tải trang
+      document.addEventListener('DOMContentLoaded', () => {
+        const first = document.querySelector('#panel-smoothies .menu-item');
+        if (first) first.click();
       });
 
-      track.addEventListener('scroll', () => {
-        const index = Math.round(track.scrollLeft / CARD_W);
-        if (index !== current) { current = index; updateDots(); }
-      }, { passive: true });
-    })();
-  </script>
+      /* ── Slider taco ───────────────────────────── */
+      (function () {
+        const track  = document.getElementById('taco-track');
+        const dots   = document.querySelectorAll('.taco-dot');
+        const CARD_W = 400 + 32;
+        let current  = 0;
+        const total  = dots.length;
 
-</body>
+        function goTo(index) {
+          current = Math.max(0, Math.min(index, total - 1));
+          track.scrollTo({ left: current * CARD_W, behavior: 'smooth' });
+          updateDots();
+        }
+
+        function updateDots() {
+          dots.forEach((dot, i) => {
+            if (i === current) {
+              dot.classList.remove('w-2', 'bg-white/30');
+              dot.classList.add('w-8', 'bg-white');
+            } else {
+              dot.classList.remove('w-8', 'bg-white');
+              dot.classList.add('w-2', 'bg-white/30');
+            }
+          });
+        }
+
+        document.getElementById('taco-prev').addEventListener('click', () => goTo(current - 1));
+        document.getElementById('taco-next').addEventListener('click', () => goTo(current + 1));
+
+        dots.forEach(dot => {
+          dot.addEventListener('click', () => goTo(Number(dot.dataset.index)));
+        });
+
+        track.addEventListener('scroll', () => {
+          const index = Math.round(track.scrollLeft / CARD_W);
+          if (index !== current) { current = index; updateDots(); }
+        }, { passive: true });
+      })();
+
+      /* Nav scroll effect */
+      const mainNav = document.getElementById('main-nav');
+      window.addEventListener('scroll', () => {
+        mainNav.classList.toggle('nav-scrolled', window.scrollY > 20);
+      });
+
+      /* Active link on scroll */
+      const navLinks = document.querySelectorAll('.nav-link');
+      window.addEventListener('scroll', () => {
+        let current = '';
+        ['home','menu','tacos','story'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el && window.scrollY >= el.offsetTop - 100) current = id;
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+        });
+      });
+
+      /* Mobile menu toggle */
+      function toggleMobileMenu() {
+        document.getElementById('mobile-menu').classList.toggle('open');
+        document.getElementById('hamburger-btn').classList.toggle('open');
+      }
+    </script>
+
+
+        <!-- ==================== LOGO BBO TEAM CỐ ĐỊNH GÓC PHẢI DƯỚI (BACKGROUND TRONG SUỐT) ==================== -->
+  <!-- LOGO FLOAT (TRANSPARENT STYLE) -->
+    <!-- FLOATING BRAND -->
+      <div class="fixed bottom-5 right-5 z-[9999] group">
+
+        <a href="#"
+          class="relative block w-14 h-14 sm:w-16 sm:h-16
+                  transition-all duration-300
+                  hover:scale-110 active:scale-95">
+
+          <!-- Glow nhẹ -->
+          <div class="absolute inset-0 rounded-full 
+                      bg-gradient-to-tr from-secondary/30 to-primary/20 
+                      blur-lg opacity-0 group-hover:opacity-100 transition"></div>
+
+          <!-- Logo -->
+          <img 
+            src="img/logo_bbo_team_white.jpg" 
+            alt="BBO Team"
+            class="relative w-full h-full object-contain
+                  rounded-full
+                  drop-shadow-[0_6px_16px_rgba(0,0,0,0.15)]">
+        </a>
+
+        <!-- Modern label -->
+        <div class="absolute bottom-1/2 right-full mr-3 translate-y-1/2
+                    px-3 py-1.5 rounded-full
+                    bg-white/70 backdrop-blur-md
+                    text-xs font-semibold text-on-surface
+                    shadow-md border border-white/40
+                    opacity-0 translate-x-2
+                    group-hover:opacity-100 group-hover:translate-x-0
+                    transition-all duration-300 whitespace-nowrap">
+
+          <span class="text-secondary">BBO</span>
+          <span class="text-primary">Team</span>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
 </html>
