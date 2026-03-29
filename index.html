@@ -537,10 +537,12 @@
         THỰC ĐƠN (TAB: SINH TỐ / NƯỚC ÉP / ĐẶC BIỆT)
     ════════════════════════════════════════ -->
     <style>
-      .menu-item.is-active { background-color: #d2e6bf; }
-      .menu-item.is-active .item-name { color: #566848; }
-      .menu-item.is-active .item-desc { color: rgba(86,104,72,0.7); }
-      .menu-item.is-active .item-price { color: #566848; }
+      .menu-item.is-active { 
+        background-color: #cce4b8; 
+      }
+      .menu-item.is-active .item-name  { color: #4e6645; }
+      .menu-item.is-active .item-desc  { color: rgba(78,102,69,0.7); }
+      .menu-item.is-active .item-price { color: #4e6645; }
       #preview-img { transition: opacity 0.22s ease, transform 0.38s ease; }
       #preview-img.fading { opacity: 0; transform: scale(1.05); }
     </style>
@@ -548,24 +550,25 @@
     <section id="menu" class="py-24 bg-surface">
       <div class="container mx-auto px-6">
   
-        <!-- Hàng tiêu đề -->
+        <!-- Hàng tiêu đề (giữ nguyên nội dung gốc của index) -->
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div class="max-w-xl">
             <span class="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">Sinh Tố Trái Cây Tươi</span>
             <h2 class="font-headline text-5xl italic leading-tight">Menu Sinh Tố & Nước Ép</h2>
           </div>
+          <!-- Tab selector (giao diện fresh) -->
           <div class="flex bg-surface-container-high p-1.5 rounded-full w-full md:w-auto">
             <button id="tab-smoothies" onclick="switchTab('smoothies')"
-                    class="tab-btn flex-1 md:flex-none px-4 md:px-8 py-3 rounded-full bg-secondary text-on-secondary font-bold shadow-md transition-all text-sm md:text-base whitespace-nowrap">
-              Sinh Tố
+                    class="tab-btn flex-1 md:flex-none px-5 md:px-8 py-3 rounded-full bg-secondary text-on-secondary font-bold shadow-md transition-all text-sm md:text-base whitespace-nowrap">
+              🥤 Sinh Tố
             </button>
             <button id="tab-juices" onclick="switchTab('juices')"
-                    class="tab-btn flex-1 md:flex-none px-4 md:px-8 py-3 rounded-full hover:bg-surface-container-highest transition-all font-medium text-sm md:text-base whitespace-nowrap">
-              Nước Ép
+                    class="tab-btn flex-1 md:flex-none px-5 md:px-8 py-3 rounded-full hover:bg-surface-container-highest transition-all font-medium text-sm md:text-base whitespace-nowrap">
+              🍋 Nước Ép
             </button>
             <button id="tab-specials" onclick="switchTab('specials')"
-                    class="tab-btn flex-1 md:flex-none px-4 md:px-8 py-3 rounded-full hover:bg-surface-container-highest transition-all font-medium text-sm md:text-base whitespace-nowrap">
-              Đặc Biệt
+                    class="tab-btn flex-1 md:flex-none px-5 md:px-8 py-3 rounded-full hover:bg-surface-container-highest transition-all font-medium text-sm md:text-base whitespace-nowrap">
+              ⭐ Đặc Biệt
             </button>
           </div>
         </div>
@@ -733,8 +736,7 @@
                       <div><h5 class="font-bold text-base item-name">BƠ</h5><p class="text-xs text-on-surface-variant item-desc">Sinh tố bơ béo ngậy, mịn màng</p></div>
                     </div>
                     <span class="font-bold text-sm item-price shrink-0">30.000 VNĐ</span>
-                  </div>
-      
+                  </div>  
                   <div class="menu-item flex items-center justify-between p-5 rounded-2xl bg-surface-container-low hover:bg-secondary-container transition-colors cursor-pointer"
                       onclick="selectItem(this, 'HẠT SEN','Sinh tố hạt sen thanh nhẹ, bổ dưỡng','30.000 VNĐ','https://cdn.tgdd.vn/Files/2018/12/20/1139342/5-cach-nau-sua-sen-ngon-me-ly-don-gian-tai-nha-4.jpg')">
                     <div class="flex items-center gap-4">
@@ -1333,7 +1335,7 @@
           </h2>
 
           <p class="text-xl text-on-secondary-container/80 leading-relaxed font-light">
-            Tại Sinh Tố Bin, chúng tôi tin rằng sức khỏe không phải là gánh nặng — đó là hương vị. Những hỗn hợp thảo mộc của chúng tôi được pha chế để tiếp thêm năng lượng cho bạn trong khi thỏa mãn tâm hồn. Dù là sinh tố buổi sáng hay bánh taco đêm khuya, chúng tôi mang đến sự cân bằng mà bạn cần.
+            Sinh tố Bin cam kết mang lại cho bạn ly sinh tố tươi ngon và chiếc bánh Taco thơm lừng với từng nguyên liệu xanh sạch nguồn gốc rõ ràng, với vị trí đắc địa gần các chợ truyền thống nên nguồn thực phẩm luôn tươi mới mỗi ngày!
           </p>
         </div>
 
