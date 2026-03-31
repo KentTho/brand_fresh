@@ -551,23 +551,19 @@
       <div class="container mx-auto px-6">
   
         <!-- Hàng tiêu đề (giữ nguyên nội dung gốc của index) -->
-        <div class="flex bg-surface-container-high p-1 rounded-full w-full md:w-auto gap-0.5">
+        <!-- Tab selector (giao diện fresh) -->
+        <div class="flex bg-surface-container-high p-1.5 rounded-full w-full md:w-auto
+                    overflow-x-auto no-scrollbar">   <!-- ← thêm 2 class này -->
           <button id="tab-smoothies" onclick="switchTab('smoothies')"
-                  class="tab-btn flex-1 md:flex-none min-w-0 px-2 md:px-8 py-2.5 md:py-3 rounded-full 
-                        bg-secondary text-on-secondary font-bold shadow-md transition-all 
-                        text-xs md:text-base whitespace-nowrap">
+                  class="tab-btn flex-none px-5 md:px-8 py-3 rounded-full bg-secondary text-on-secondary font-bold shadow-md transition-all text-sm md:text-base whitespace-nowrap">
             🥤 Sinh Tố
           </button>
           <button id="tab-juices" onclick="switchTab('juices')"
-                  class="tab-btn flex-1 md:flex-none min-w-0 px-2 md:px-8 py-2.5 md:py-3 rounded-full 
-                        hover:bg-surface-container-highest transition-all font-medium 
-                        text-xs md:text-base whitespace-nowrap">
+                  class="tab-btn flex-none px-5 md:px-8 py-3 rounded-full hover:bg-surface-container-highest transition-all font-medium text-sm md:text-base whitespace-nowrap">
             🍋 Nước Ép
           </button>
           <button id="tab-specials" onclick="switchTab('specials')"
-                  class="tab-btn flex-1 md:flex-none min-w-0 px-2 md:px-8 py-2.5 md:py-3 rounded-full 
-                        hover:bg-surface-container-highest transition-all font-medium 
-                        text-xs md:text-base whitespace-nowrap">
+                  class="tab-btn flex-none px-5 md:px-8 py-3 rounded-full hover:bg-surface-container-highest transition-all font-medium text-sm md:text-base whitespace-nowrap">
             ⭐ Đặc Biệt
           </button>
         </div>
