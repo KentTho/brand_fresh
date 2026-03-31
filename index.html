@@ -1701,29 +1701,33 @@
       /* --- Hiệu ứng cuộn cho nút BBO Team --------- */
       (function() {
         let bboTimer;
-        const bboText = document.getElementById('bbo-text-container');
+        const bboText  = document.getElementById('bbo-text-container');
         const bboRobot = document.getElementById('bbo-robot-container');
-        
-        const textExpandClasses = ['max-w-[250px]', 'opacity-100', 'ml-3', 'pr-4'];
+
+        const textExpandClasses  = ['max-w-[250px]', 'opacity-100', 'ml-3', 'pr-4'];
         const robotExpandClasses = ['opacity-100', 'translate-y-0', 'scale-100'];
 
-        window.addEventListener('scroll', () => {
+        function showBBO() {
           if (!bboText || !bboRobot) return;
-
-          // Hiển thị Robot và Nội dung
           bboText.classList.add(...textExpandClasses);
           bboRobot.classList.add(...robotExpandClasses);
-
-          // Xóa timer cũ nếu đang có
           clearTimeout(bboTimer);
-
-          // Thu hồi sau 4 giây
           bboTimer = setTimeout(() => {
             bboText.classList.remove(...textExpandClasses);
             bboRobot.classList.remove(...robotExpandClasses);
           }, 4000);
-        }, { passive: true });
+        }
+
+        // Desktop
+        window.addEventListener('scroll', showBBO, { passive: true });
+
+        // Mobile – touch scroll
+        window.addEventListener('touchmove', showBBO, { passive: true });
+
+        // Mobile – khi bắt đầu chạm (show ngay lần đầu)
+        window.addEventListener('touchstart', showBBO, { passive: true });
       })();
+
     </script>
 
 
